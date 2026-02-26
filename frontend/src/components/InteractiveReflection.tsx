@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn, slideUp } from '../animations/animationVariants';
+
+interface InteractiveReflectionProps {
+  onPromptClick: (prompt: string) => void;
+}
+
+const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptClick }) => {
+  const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
+  const [response, setResponse] = useState<string>('');
+
+  const prompts = [
+    "What feels unclear right now?",
+    "What patterns do you notice in your thinking?",
+    "What assumptions are you making?",
+    "What would you explore if you weren't afraid?",
+  ];
+
+  const handlePromptClick = (prompt: string) => {
+    setSelectedPrompt(prompt);
+    setResponse("What perspective might you be missing in this moment?");
+    onPromptClick(prompt);
+  };
+
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeIn}
+      className="py-20 px-4 bg-gray-800"
+    >
+      <div className="max-w-4xl mx-auto">
+        <motion.h2
+          className="text-3xl md:text-4xl font-light text-white text-center mb-12"
+          variants={slideUp}
+        >
+          A moment of reflection
+        </motion.h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {prompts.map((prompt, index) => (
+            <motion.button
+              key={index}
+              className="p-6 bg-gray-700 rounded-lg text-left hover:bg-gray-600 transition-colors duration-300"
+              variants={slideUp}
+              custom={index}
+              onClick={() => handlePromptClick(prompt)}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <p className="text-lg text-blue-300">{prompt}</p>
+            </motion.button>
+          ))}
+        </div>
+
+        {response && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="p-8 bg-gray-900 rounded-lg"
+          >
+            <p className="text-xl text-white text-center italic">{response}</p>
+          </motion.div>
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
+export default InteractiveReflection;
