@@ -9,7 +9,11 @@ interface Message {
   timestamp: Date;
 }
 
-const ChatPage: React.FC = () => {
+interface ChatPageProps {
+  onBack: () => void;
+}
+
+const ChatPage: React.FC<ChatPageProps> = ({ onBack }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -59,10 +63,16 @@ const ChatPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="min-h-screen lucid-gradient flex flex-col">
       {/* Header */}
-      <div className="bg-gray-800 border-b border-gray-700 p-4">
+      <div className="bg-slate-800 border-b border-slate-700 p-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
+          <button
+            onClick={onBack}
+            className="text-slate-400 hover:text-white transition-colors"
+          >
+            ← Back
+          </button>
           <h1 className="text-xl font-light text-white">Lucid</h1>
           <Mascot />
         </div>
@@ -84,7 +94,7 @@ const ChatPage: React.FC = () => {
                   className={`max-w-lg p-4 rounded-lg ${
                     message.isUser
                       ? 'bg-blue-600 text-white'
-                      : 'bg-gray-800 text-gray-100'
+                      : 'lucid-card text-slate-100'
                   }`}
                 >
                   <p className="text-sm">{message.text}</p>
@@ -99,11 +109,11 @@ const ChatPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               className="flex justify-start"
             >
-              <div className="bg-gray-800 p-4 rounded-lg">
+              <div className="lucid-card p-4 rounded-lg">
                 <div className="flex space-x-2">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" />
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
                 </div>
               </div>
             </motion.div>
@@ -113,7 +123,7 @@ const ChatPage: React.FC = () => {
       </div>
 
       {/* Input */}
-      <div className="bg-gray-800 border-t border-gray-700 p-4">
+      <div className="bg-slate-800 border-t border-slate-700 p-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex space-x-4">
             <input
@@ -122,12 +132,12 @@ const ChatPage: React.FC = () => {
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="What feels unclear right now?"
-              className="flex-1 px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-4 py-3 bg-slate-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               autoFocus
             />
             <motion.button
               onClick={handleSendMessage}
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+              className="px-6 py-3 lucid-button-primary text-white rounded-lg disabled:opacity-50"
               disabled={!inputText.trim() || isTyping}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

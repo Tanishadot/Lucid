@@ -14,12 +14,12 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 bg-gray-900"
+      className="py-20 px-4 bg-slate-800/50"
     >
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.button
-            className="group relative p-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-blue-500 transition-all duration-300"
+            className="group relative p-8 lucid-card rounded-lg border border-slate-700/50 hover:border-blue-500 transition-all duration-300"
             variants={glow}
             onClick={onStartChat}
             whileHover={{ scale: 1.02 }}
@@ -43,7 +43,7 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
           </motion.button>
 
           <motion.button
-            className="group relative p-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-500 transition-all duration-300"
+            className="group relative p-8 lucid-card rounded-lg border border-slate-700/50 hover:border-purple-500 transition-all duration-300"
             variants={glow}
             onClick={onStartDemo}
             whileHover={{ scale: 1.02 }}

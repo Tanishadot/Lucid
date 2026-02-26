@@ -1,24 +1,23 @@
-import { Variants, Easing } from 'framer-motion';
+import { Variants } from 'framer-motion';
 
 export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
-    transition: { duration: 0.8, ease: "easeOut" as Easing }
+    transition: { duration: 0.8, ease: "easeOut" }
   },
 };
 
 export const slideUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: (custom: number = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: { 
       duration: 0.6, 
-      delay: custom * 0.1,
-      ease: "easeOut" as Easing
+      ease: "easeOut"
     }
-  }),
+  },
 };
 
 export const float = {
@@ -27,7 +26,7 @@ export const float = {
   transition: {
     duration: 10,
     repeat: Infinity,
-    ease: "easeInOut" as Easing,
+    ease: "easeInOut",
   },
 };
 
@@ -37,7 +36,7 @@ export const glow = {
     opacity: 1,
     transition: {
       duration: 0.8,
-      ease: "easeOut" as Easing,
+      ease: "easeOut",
     },
   },
 };

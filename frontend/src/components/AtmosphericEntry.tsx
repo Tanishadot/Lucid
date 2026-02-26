@@ -8,7 +8,7 @@ const AtmosphericEntry: React.FC = () => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="min-h-screen bg-gray-900 flex flex-col items-center justify-center relative overflow-hidden"
+      className="min-h-screen lucid-gradient flex flex-col items-center justify-center relative overflow-hidden"
     >
       {/* Floating particles background */}
       <div className="absolute inset-0">

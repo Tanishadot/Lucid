@@ -42,7 +42,7 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
               thoughtful questions that reveal your own wisdom.
             </p>
             <motion.button
-              className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-8 py-3 lucid-button-primary text-white rounded-lg"
               onClick={() => setCurrentStep(1)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -62,7 +62,7 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
               {dilemmas.map((dilemma, index) => (
                 <motion.button
                   key={index}
-                  className="w-full p-4 bg-gray-700 rounded-lg text-left hover:bg-gray-600 transition-colors"
+                  className="w-full p-4 lucid-card rounded-lg text-left hover:bg-slate-700 transition-colors"
                   onClick={() => handleDilemmaSelect(dilemma, index)}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -91,7 +91,7 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
             </div>
             <div className="space-x-4">
               <motion.button
-                className="px-6 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors"
+                className="px-6 py-2 lucid-button-secondary text-white rounded-lg"
                 onClick={() => setCurrentStep(1)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -99,7 +99,7 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
                 Try Another
               </motion.button>
               <motion.button
-                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="px-6 py-2 lucid-button-primary text-white rounded-lg"
                 onClick={onExit}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -120,7 +120,7 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="min-h-screen bg-gray-900 flex items-center justify-center px-4"
+      className="min-h-screen lucid-gradient flex items-center justify-center px-4"
     >
       <div className="max-w-4xl w-full">
         <AnimatePresence mode="wait">

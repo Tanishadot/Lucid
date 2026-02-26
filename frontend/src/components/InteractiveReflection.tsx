@@ -29,7 +29,7 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 bg-gray-800"
+      className="py-20 px-4 lucid-card"
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
@@ -43,9 +43,8 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
           {prompts.map((prompt, index) => (
             <motion.button
               key={index}
-              className="p-6 bg-gray-700 rounded-lg text-left hover:bg-gray-600 transition-colors duration-300"
+              className="p-6 lucid-card rounded-lg text-left hover:bg-slate-700 transition-colors duration-300"
               variants={slideUp}
-              custom={index}
               onClick={() => handlePromptClick(prompt)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -60,7 +59,7 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="p-8 bg-gray-900 rounded-lg"
+            className="p-8 lucid-card rounded-lg"
           >
             <p className="text-xl text-white text-center italic">{response}</p>
           </motion.div>
