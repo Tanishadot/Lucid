@@ -1,8 +1,24 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
 from api.simple_routes import router
 
-app = FastAPI(title="LUCID Backend")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    print("=== LUCID BACKEND STARTUP ===")
+    print("Server started successfully.")
+    print("Chroma will initialize lazily on first request.")
+    print("=== STARTUP COMPLETE ===")
+    
+    yield
+    
+    # Shutdown
+    print("=== LUCID BACKEND SHUTDOWN ===")
+
+
+app = FastAPI(title="LUCID Backend", lifespan=lifespan)
 
 # Add CORS middleware
 app.add_middleware(
@@ -14,13 +30,6 @@ app.add_middleware(
 )
 
 app.include_router(router)
-
-@app.on_event("startup")
-def startup_event():
-    print("=== LUCID BACKEND STARTUP ===")
-    print("Server started successfully.")
-    print("Chroma will initialize lazily on first request.")
-    print("=== STARTUP COMPLETE ===")
 
 @app.get("/")
 def root():
