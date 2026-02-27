@@ -5,21 +5,33 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-slate-900 text-slate-100;
-    @apply min-h-screen;
+    @apply min-h-screen transition-colors duration-300;
+    /* Light theme (default) */
+    background-color: #F4F2F8;
+    color: #4B5563;
+  }
+  
+  /* Dark theme */
+  .dark body {
+    background-color: #0F172A;
+    color: #CBD5E1;
   }
 }
 
 @layer components {
+  /* Light theme components */
   .lucid-gradient {
-    @apply bg-gradient-to-br from-blue-900 via-slate-800 to-purple-900;
+    background: linear-gradient(to bottom right, #E9E6F4, #F4F2F8);
   }
   
   .lucid-card {
-    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    @apply rounded-lg shadow-md transition-colors duration-300;
   }
   
   .lucid-button {
@@ -28,10 +40,110 @@
   }
   
   .lucid-button-primary {
-    @apply lucid-button bg-blue-600 hover:bg-blue-700 text-white;
+    @apply lucid-button;
+    background-color: #6D5DD3;
+    color: #FFFFFF;
+  }
+  
+  .lucid-button-primary:hover {
+    background-color: #5B4BC4;
   }
   
   .lucid-button-secondary {
-    @apply lucid-button bg-slate-700 hover:bg-slate-600 text-slate-100;
+    @apply lucid-button;
+    background-color: #E5E7EB;
+    color: #4B5563;
+  }
+  
+  .lucid-button-secondary:hover {
+    background-color: #D1D5DB;
+  }
+
+  /* Dark theme components */
+  .dark .lucid-gradient {
+    background: linear-gradient(to bottom right, #1E1B3A, #0F172A);
+  }
+  
+  .dark .lucid-card {
+    background-color: #1E293B;
+    border-color: #334155;
+  }
+  
+  .dark .lucid-button-primary {
+    background-color: #7C6FF0;
+  }
+  
+  .dark .lucid-button-primary:hover {
+    background-color: #6D5DD3;
+  }
+  
+  .dark .lucid-button-secondary {
+    background-color: #334155;
+    color: #CBD5E1;
+  }
+  
+  .dark .lucid-button-secondary:hover {
+    background-color: #475569;
+  }
+
+  /* Text colors */
+  .lucid-primary-text {
+    color: #1E1B2E;
+  }
+  
+  .lucid-secondary-text {
+    color: #6B63A8;
+  }
+  
+  .lucid-muted-text {
+    color: #6B7280;
+  }
+  
+  .lucid-body {
+    color: #4B5563;
+  }
+  
+  .dark .lucid-primary-text {
+    color: #F8FAFC;
+  }
+  
+  .dark .lucid-secondary-text {
+    color: #A5B4FC;
+  }
+  
+  .dark .lucid-muted-text {
+    color: #94A3B8;
+  }
+  
+  .dark .lucid-body {
+    color: #CBD5E1;
+  }
+
+  /* Error states */
+  .lucid-error {
+    background-color: #FEE2E2;
+    color: #991B1B;
+  }
+  
+  .dark .lucid-error {
+    background-color: #7F1D1D;
+    color: #FECACA;
+  }
+
+  /* Surface colors */
+  .lucid-surface {
+    background-color: #FFFFFF;
+  }
+  
+  .dark .lucid-surface {
+    background-color: #1E293B;
+  }
+
+  /* Performance optimizations for parallax */
+  .parallax-element {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
   }
 }

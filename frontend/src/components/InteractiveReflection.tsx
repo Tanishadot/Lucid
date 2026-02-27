@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, slideUp } from '../animations/animationVariants';
+import { useParallaxScroll } from '../hooks/useParallaxScroll';
 
 interface InteractiveReflectionProps {
   onPromptClick: (prompt: string) => void;
@@ -9,6 +10,7 @@ interface InteractiveReflectionProps {
 const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptClick }) => {
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
   const [response, setResponse] = useState<string>('');
+  const { style: parallaxStyle } = useParallaxScroll({ speed: 0.15 });
 
   const prompts = [
     "What feels unclear right now?",
@@ -29,11 +31,19 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 lucid-card"
+      className="py-20 px-4 lucid-card relative"
     >
-      <div className="max-w-4xl mx-auto">
+      {/* Subtle parallax background layer */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={parallaxStyle}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/5 via-transparent to-purple-800/5 rounded-lg" />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2
-          className="text-3xl md:text-4xl font-light text-white text-center mb-12"
+          className="text-3xl md:text-4xl font-light lucid-primary-text text-center mb-12"
           variants={slideUp}
         >
           A moment of reflection
@@ -43,13 +53,13 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
           {prompts.map((prompt, index) => (
             <motion.button
               key={index}
-              className="p-6 lucid-card rounded-lg text-left hover:bg-slate-700 transition-colors duration-300"
+              className="p-6 lucid-card rounded-lg text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300"
               variants={slideUp}
               onClick={() => handlePromptClick(prompt)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <p className="text-lg text-blue-300">{prompt}</p>
+              <p className="text-lg lucid-secondary-text">{prompt}</p>
             </motion.button>
           ))}
         </div>
@@ -61,7 +71,7 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
             exit={{ opacity: 0, y: -20 }}
             className="p-8 lucid-card rounded-lg"
           >
-            <p className="text-xl text-white text-center italic">{response}</p>
+            <p className="text-xl lucid-primary-text text-center italic">{response}</p>
           </motion.div>
         )}
       </div>

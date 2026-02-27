@@ -1,7 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from api.simple_routes import router
+from api.simple_routes import router, TranscriptionResponse
 
 
 @asynccontextmanager
@@ -30,6 +30,35 @@ app.add_middleware(
 )
 
 app.include_router(router)
+
+@app.post("/api/transcribe", response_model=TranscriptionResponse)
+async def transcribe_audio_main(file: UploadFile = File(...)):
+    """
+    Transcribe audio file using a mock implementation.
+    In production, this would integrate with OpenAI Whisper or similar service.
+    """
+    try:
+        # Check file type
+        if not file.content_type or not file.content_type.startswith('audio/'):
+            raise HTTPException(status_code=400, detail="File must be an audio file")
+        
+        # Read file content (for demo purposes, we'll mock transcription)
+        audio_content = await file.read()
+        
+        # Mock transcription - in production, use OpenAI Whisper or similar
+        # For now, return a placeholder response
+        mock_transcript = "This is a mock transcription. In production, this would be the actual transcribed text from your audio."
+        
+        print(f"Received audio file: {file.filename}, size: {len(audio_content)} bytes")
+        print(f"Content type: {file.content_type}")
+        
+        return TranscriptionResponse(transcript=mock_transcript)
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"Error in transcription: {e}")
+        raise HTTPException(status_code=500, detail="Transcription failed")
 
 @app.get("/")
 def root():

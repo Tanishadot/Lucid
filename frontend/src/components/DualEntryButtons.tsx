@@ -14,12 +14,12 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 bg-slate-800/50"
+      className="py-20 px-4 lucid-surface"
     >
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.button
-            className="group relative p-8 lucid-card rounded-lg border border-slate-700/50 hover:border-blue-500 transition-all duration-300"
+            className="group relative p-8 lucid-card rounded-lg border border-gray-200 dark:border-gray-600 hover:border-blue-500 transition-all duration-300"
             variants={glow}
             onClick={onStartChat}
             whileHover={{ scale: 1.02 }}
@@ -27,10 +27,10 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
           >
             <div className="text-center">
               <span className="text-4xl mb-4 block">🌙</span>
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold lucid-primary-text mb-2">
                 Start a Quiet Conversation
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="lucid-muted-text text-sm">
                 Begin your reflective journey with Lucid
               </p>
             </div>
@@ -43,7 +43,7 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
           </motion.button>
 
           <motion.button
-            className="group relative p-8 lucid-card rounded-lg border border-slate-700/50 hover:border-purple-500 transition-all duration-300"
+            className="group relative p-8 lucid-card rounded-lg border border-gray-200 dark:border-gray-600 hover:border-blue-500 transition-all duration-300"
             variants={glow}
             onClick={onStartDemo}
             whileHover={{ scale: 1.02 }}
@@ -51,15 +51,15 @@ const DualEntryButtons: React.FC<DualEntryButtonsProps> = ({ onStartChat, onStar
           >
             <div className="text-center">
               <span className="text-4xl mb-4 block">📖</span>
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold lucid-primary-text mb-2">
                 See How Lucid Thinks
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="lucid-muted-text text-sm">
                 Experience the reflection-first approach
               </p>
             </div>
             <motion.div
-              className="absolute inset-0 rounded-lg bg-purple-500 opacity-0 group-hover:opacity-10"
+              className="absolute inset-0 rounded-lg bg-blue-500 opacity-0 group-hover:opacity-10"
               initial={false}
               animate={{ opacity: [0, 0.1, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
