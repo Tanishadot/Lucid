@@ -41,18 +41,46 @@ const ChatPage: React.FC<ChatPageProps> = ({ onBack }) => {
     setInputText('');
     setIsTyping(true);
 
-    // Simulate API call delay
-    setTimeout(() => {
+    try {
+      const response = await fetch('http://localhost:8000/api/v1/reflect', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          user_input: inputText,
+          session_id: "frontend-session"
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
       const reflectionResponse: Message = {
         id: (Date.now() + 1).toString(),
-        text: "What perspective might you be missing in this moment?",
+        text: data.response,
         isUser: false,
         timestamp: new Date(),
       };
       
       setMessages(prev => [...prev, reflectionResponse]);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      
+      const fallbackResponse: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "I'm having trouble connecting right now. What feels present for you as you wait?",
+        isUser: false,
+        timestamp: new Date(),
+      };
+      
+      setMessages(prev => [...prev, fallbackResponse]);
+    } finally {
       setIsTyping(false);
-    }, 2000);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
