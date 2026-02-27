@@ -1,0 +1,213 @@
+{
+  "category": "Cognitive Patterns — Trauma, Perfectionism, People-Pleasing",
+  "units": [
+
+    {
+      "id": "TRA_001",
+      "cognitive_pattern": "HYPERVIGILANCE_AS_NORMAL",
+      "theme_tags": ["trauma", "anxiety", "always alert", "can't relax", "waiting for something bad", "hypervigilance", "safety"],
+      "core_reframe": "The nervous system that learned to scan for danger in the past does not automatically know when the danger has passed — it keeps the alarm running as a form of protection, even when the threat is gone.",
+      "question_bank": [
+        "When did you first learn that the world required this level of alertness?",
+        "What would it actually feel like to feel safe — not logically know you're safe, but feel it?",
+        "What is the vigilance protecting you from that you don't want to be unprotected from?",
+        "What has the constant readiness cost you in terms of rest, presence, or connection?"
+      ],
+      "short_reframe": "The alarm that kept you safe then doesn't know that 'then' is over.",
+      "short_question": "What would it feel like to actually feel safe — not just know you are?",
+      "rewire_target": "Develop nervous system awareness — distinguish past threat from present reality."
+    },
+
+    {
+      "id": "TRA_002",
+      "cognitive_pattern": "TRAUMA_AS_IDENTITY",
+      "theme_tags": ["trauma", "identity", "survivor", "defined by past", "what happened to me", "victim", "story"],
+      "core_reframe": "The thing that happened to you is real. And carrying it as the most central fact of who you are is a choice — one that made sense for a while, and may be worth examining now.",
+      "question_bank": [
+        "Who are you in addition to what happened to you?",
+        "What would you explore about yourself if the difficult past weren't the primary lens?",
+        "What parts of you existed before this — and are any of them still here?",
+        "What would it mean to carry this lightly — not to erase it, but not to be organized by it?"
+      ],
+      "short_reframe": "What happened to you is part of your story — the question is how much of the page it gets.",
+      "short_question": "Who are you that exists separately from what you survived?",
+      "rewire_target": "Develop post-traumatic identity — self-concept that includes but isn't organized around the wound."
+    },
+
+    {
+      "id": "TRA_003",
+      "cognitive_pattern": "EMOTIONAL_SHUTDOWN",
+      "theme_tags": ["trauma", "numbness", "can't feel", "disconnected", "flat", "emotional unavailability", "shutdown"],
+      "core_reframe": "Numbness is not the absence of feeling — it is feeling's protection strategy. When things became too much, the system dimmed the signal. The dimness is itself a sign of how much was once felt.",
+      "question_bank": [
+        "When did you first notice that you'd stopped feeling things the way you used to?",
+        "What feeling, if it came back, would you be most afraid of?",
+        "What did the numbness originally protect you from — and is that protection still necessary?",
+        "Is there anywhere in your life where feeling still gets through — even slightly?"
+      ],
+      "short_reframe": "Numbness is the system's way of surviving what feeling couldn't hold — it was protection, not absence.",
+      "short_question": "What feeling, if it returned, would you be most afraid to have back?",
+      "rewire_target": "Restore emotional contact — gradual, safe return to felt experience."
+    },
+
+    {
+      "id": "TRA_004",
+      "cognitive_pattern": "TRUST_COLLAPSE",
+      "theme_tags": ["trauma", "trust", "betrayal", "can't trust anyone", "walls up", "self-protection", "intimacy"],
+      "core_reframe": "The person who learned that trust leads to betrayal built the most rational wall possible — and then found themselves alone inside it, which became its own kind of pain.",
+      "question_bank": [
+        "What would have to be true about a person for you to trust them — have you ever articulated that?",
+        "What is the difference between choosing who to trust carefully and deciding trust itself is unavailable?",
+        "What has the wall kept out that you didn't want kept out?",
+        "What would you risk by letting someone in slightly — just slightly — further than you currently do?"
+      ],
+      "short_reframe": "The wall that kept out betrayal also kept out connection — both things are true.",
+      "short_question": "What has the wall kept out that you didn't actually want kept out?",
+      "rewire_target": "Rebuild selective trust — distinguishing blanket self-protection from discerning openness."
+    },
+
+    {
+      "id": "PERF_001",
+      "cognitive_pattern": "PERFECTIONISM_AS_SAFETY",
+      "theme_tags": ["perfectionism", "never good enough", "high standards", "fear of failure", "can't finish", "procrastination"],
+      "core_reframe": "Perfectionism is not the love of excellence — it is the terror of being found inadequate, dressed up as high standards.",
+      "question_bank": [
+        "What are you afraid would be revealed about you if the work were imperfect and visible?",
+        "What is the belief underneath 'it has to be perfect'?",
+        "Whose voice does the inner critic sound like when it says it's not good enough?",
+        "What have you not started or not finished because the standard felt impossible from the beginning?"
+      ],
+      "short_reframe": "The drive for perfect is rarely about the work — it's about what imperfect says about you.",
+      "short_question": "What would imperfect work say about you that you can't tolerate?",
+      "rewire_target": "Distinguish excellence from perfectionism — high standards from fear-based impossibility."
+    },
+
+    {
+      "id": "PERF_002",
+      "cognitive_pattern": "COMPLETION_PHOBIA",
+      "theme_tags": ["perfectionism", "can't finish", "almost done", "leaving things incomplete", "procrastination", "starting not finishing"],
+      "core_reframe": "Leaving things unfinished keeps them permanently possible — a finished thing can be judged, found lacking, or simply be over. Incompleteness is sometimes a way of staying safe from the verdict.",
+      "question_bank": [
+        "What happens in your imagination the moment something is done and visible to others?",
+        "Is there a pattern of things that get 90% complete and then stall?",
+        "What does finishing something take away that unfinished keeps available?",
+        "What is the fear that arrives right at the edge of completion?"
+      ],
+      "short_reframe": "The unfinished thing cannot be judged — which is sometimes exactly why it stays unfinished.",
+      "short_question": "What would finishing take away that staying almost-done keeps safely available?",
+      "rewire_target": "Identify and dissolve completion anxiety — separate the act of finishing from the fear of judgment."
+    },
+
+    {
+      "id": "PERF_003",
+      "cognitive_pattern": "ALL_OR_NOTHING_EFFORT",
+      "theme_tags": ["perfectionism", "all or nothing", "if i can't do it perfectly why bother", "giving up", "quitting"],
+      "core_reframe": "The mind that decides between perfect and pointless has removed the entire middle range where most of real life happens.",
+      "question_bank": [
+        "What would 'good enough for now' look like — and why does that feel like failure?",
+        "What have you abandoned because it couldn't meet the standard you set at the beginning?",
+        "What is the cost of the all-or-nothing standard in terms of things that never got to exist at all?",
+        "What would you begin if 'okay' were an acceptable place to start?"
+      ],
+      "short_reframe": "Between perfect and pointless is where everything real actually gets done.",
+      "short_question": "What would you begin if 'okay' was an acceptable place to start?",
+      "rewire_target": "Develop graduated standards — the capacity to value effort and progress rather than only outcome."
+    },
+
+    {
+      "id": "PP_001",
+      "cognitive_pattern": "CHRONIC_PEOPLE_PLEASING",
+      "theme_tags": ["people pleasing", "can't say no", "approval seeking", "conflict avoidance", "always agreeing", "resentment"],
+      "core_reframe": "The person who can never say no has made everyone else's comfort more important than their own reality — and usually learned this was necessary before they were old enough to know it was a choice.",
+      "question_bank": [
+        "When did you first learn that keeping others comfortable was your responsibility?",
+        "What do you imagine would happen to the relationship if you said no?",
+        "What has never saying no cost you that you haven't fully accounted for?",
+        "What would the version of you who said no occasionally look and feel like?"
+      ],
+      "short_reframe": "The inability to disappoint others is often the inability to be honest with them.",
+      "short_question": "What do you imagine would actually happen if you said no?",
+      "rewire_target": "Develop authentic relating — moving from appeasement-based interaction to honest engagement."
+    },
+
+    {
+      "id": "PP_002",
+      "cognitive_pattern": "CONFLICT_EQUALS_DANGER",
+      "theme_tags": ["people pleasing", "conflict avoidance", "peace keeping", "can't handle disagreement", "confrontation", "avoiding difficult conversations"],
+      "core_reframe": "The belief that conflict destroys relationships is often the belief that the relationship is too fragile to survive honesty — which is itself a statement about the relationship worth examining.",
+      "question_bank": [
+        "What do you believe conflict means for a relationship — what's the catastrophic version in your mind?",
+        "What relationships in your life have survived honest disagreement — and what did that teach you?",
+        "Is the peace you're maintaining real, or is it the surface over something building underneath?",
+        "What would you say if you believed the relationship could hold it?"
+      ],
+      "short_reframe": "The relationship you're protecting from conflict might be the one that most needs it.",
+      "short_question": "What would you say if you believed the relationship was strong enough to hold it?",
+      "rewire_target": "Develop conflict tolerance — distinguishing productive disagreement from relationship destruction."
+    },
+
+    {
+      "id": "PP_003",
+      "cognitive_pattern": "SELF_ERASURE_GENEROSITY",
+      "theme_tags": ["people pleasing", "giving self away", "no identity", "what do I want", "selflessness", "lost self"],
+      "core_reframe": "There is a version of selflessness that is genuinely generous — and a version that is the self, erased, calling it virtue.",
+      "question_bank": [
+        "When someone asks what you want — what happens in the moment before you answer?",
+        "What do you actually prefer, enjoy, and want — separate from what makes others comfortable?",
+        "How long could you articulate your own preferences without referencing someone else's?",
+        "When did your own desires start feeling like a disruption rather than a legitimate voice?"
+      ],
+      "short_reframe": "Selflessness that requires erasing yourself isn't generosity — it's a different kind of loss.",
+      "short_question": "What do you actually want — not what works for everyone, what you want?",
+      "rewire_target": "Recover self-knowledge — distinguishing genuine generosity from self-erasure under the label of care."
+    },
+
+    {
+      "id": "PP_004",
+      "cognitive_pattern": "MASK_EXHAUSTION",
+      "theme_tags": ["people pleasing", "exhaustion", "performing", "social mask", "can't be myself", "always on", "tired of pretending"],
+      "core_reframe": "The exhaustion of being around people isn't about people — it's about the energy cost of managing the gap between who you are and who you're presenting.",
+      "question_bank": [
+        "How wide is the gap between who you are in public and who you are alone?",
+        "Is there anyone with whom the gap fully closes — and what makes that possible?",
+        "What would you stop doing in social situations if you trusted people to stay anyway?",
+        "What part of yourself have you been keeping out of sight for so long it feels dangerous to show?"
+      ],
+      "short_reframe": "The tiredness after being with people is the gap between the you that showed up and the you that stayed behind.",
+      "short_question": "Who is the you that stayed home while the other version went to be with people?",
+      "rewire_target": "Reduce identity performance — move toward authentic self-presentation in safe relationships."
+    },
+
+    {
+      "id": "TRA_005",
+      "cognitive_pattern": "SELF_BLAME_SURVIVAL",
+      "theme_tags": ["trauma", "self blame", "it was my fault", "shame", "abuse", "responsibility", "child self"],
+      "core_reframe": "Children who blame themselves for what was done to them are not wrong to look for a cause — but they are looking in the only place they feel they have control, which is themselves.",
+      "question_bank": [
+        "What did blaming yourself give you that external blame couldn't — in terms of feeling some control?",
+        "If a child came to you with this exact story and blamed themselves, what would you say?",
+        "What would it mean about your world if you weren't responsible for what happened?",
+        "What does carrying the responsibility protect you from having to feel about the person who actually held it?"
+      ],
+      "short_reframe": "Self-blame in powerless situations is the mind trying to find some control — even a painful one.",
+      "short_question": "What would you need to feel about them if the blame weren't yours to carry?",
+      "rewire_target": "Redistribute responsibility accurately — release self-blame without collapsing into victimhood."
+    },
+
+    {
+      "id": "PERF_004",
+      "cognitive_pattern": "INNER_CRITIC_AUTHORITY",
+      "theme_tags": ["perfectionism", "inner critic", "self judgment", "harsh self talk", "not good enough", "voice in head"],
+      "core_reframe": "The inner critic speaks with great authority and very rarely with accuracy — it is a protective voice that learned harshness as a style before it learned anything else.",
+      "question_bank": [
+        "Whose voice does the inner critic most resemble?",
+        "What is the inner critic actually trying to protect you from?",
+        "If you spoke to someone you loved the way the inner critic speaks to you, what would that look like?",
+        "Has the inner critic's harshness ever actually produced the improvement it promises — or just the pain?"
+      ],
+      "short_reframe": "The harshest voice inside you learned its tone before it had any choice about it.",
+      "short_question": "Whose voice does the inner critic sound like — and when did you take over running it yourself?",
+      "rewire_target": "Develop inner critic awareness — understanding its origin and separating its voice from truth."
+    }
+  ]
+}

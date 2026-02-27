@@ -1,0 +1,952 @@
+{
+  "total": 42,
+  "chunks": [
+    {
+      "id": "MON_001",
+      "retrieval_text": "money poverty mindset scarcity fear of losing money never enough financial anxiety SCARCITY IDENTITY The scarcity isn't in the account \u2014 it's in the story running underneath it. What does money mean to you beyond what it can buy?",
+      "reframe": "The scarcity isn't in the account \u2014 it's in the story running underneath it.",
+      "question": "What does money mean to you beyond what it can buy?",
+      "cognitive_pattern": "SCARCITY_IDENTITY",
+      "theme_tags": [
+        "money",
+        "poverty mindset",
+        "scarcity",
+        "fear of losing money",
+        "never enough",
+        "financial anxiety"
+      ],
+      "rewire_target": "Separate financial reality from identity \u2014 money as a tool, not a verdict.",
+      "full_question_bank": [
+        "What does having money protect you from feeling about yourself?",
+        "When did financial security first feel like a measure of your worth?",
+        "What would 'enough' actually feel like \u2014 not look like, feel like?",
+        "What are you really trying to secure when you think about money?"
+      ]
+    },
+    {
+      "id": "MON_002",
+      "retrieval_text": "money comparison success earning salary keeping up status MONEY AS SCOREBOARD The number only has power because of the comparison it enables. Whose scoreboard are you actually playing on?",
+      "reframe": "The number only has power because of the comparison it enables.",
+      "question": "Whose scoreboard are you actually playing on?",
+      "cognitive_pattern": "MONEY_AS_SCOREBOARD",
+      "theme_tags": [
+        "money",
+        "comparison",
+        "success",
+        "earning",
+        "salary",
+        "keeping up",
+        "status"
+      ],
+      "rewire_target": "Disentangle financial goals from social comparison \u2014 build intrinsic financial values.",
+      "full_question_bank": [
+        "Whose financial life are you unconsciously benchmarking against?",
+        "If no one knew how much you earned, would the amount still matter as much?",
+        "What would you do with money if it carried no social signal whatsoever?",
+        "What does earning more solve that earning less doesn't \u2014 specifically?"
+      ]
+    },
+    {
+      "id": "MON_003",
+      "retrieval_text": "money spending shopping impulse retail therapy debt avoidance SPENDING AS FEELING The purchase was solving an emotion, not a need. What were you actually trying to feel when you bought it?",
+      "reframe": "The purchase was solving an emotion, not a need.",
+      "question": "What were you actually trying to feel when you bought it?",
+      "cognitive_pattern": "SPENDING_AS_FEELING",
+      "theme_tags": [
+        "money",
+        "spending",
+        "shopping",
+        "impulse",
+        "retail therapy",
+        "debt",
+        "avoidance"
+      ],
+      "rewire_target": "Build awareness of emotional spending \u2014 distinguish acquisition from emotional regulation.",
+      "full_question_bank": [
+        "What were you feeling in the hour before the purchase?",
+        "What does the thing you bought represent \u2014 not what it does, what it represents?",
+        "What feeling were you trying to install, and how long did it last?",
+        "What would you have had to sit with if you hadn't bought it?"
+      ]
+    },
+    {
+      "id": "MON_004",
+      "retrieval_text": "money giving guilt family money lending financial boundaries saying no GENEROSITY GUILT The guilt isn't about money \u2014 it's about the cost of being seen as someone who says no. What are you buying with the yes that you can't afford?",
+      "reframe": "The guilt isn't about money \u2014 it's about the cost of being seen as someone who says no.",
+      "question": "What are you buying with the yes that you can't afford?",
+      "cognitive_pattern": "GENEROSITY_GUILT",
+      "theme_tags": [
+        "money",
+        "giving",
+        "guilt",
+        "family money",
+        "lending",
+        "financial boundaries",
+        "saying no"
+      ],
+      "rewire_target": "Separate generosity from self-erasure \u2014 give from fullness, not from fear.",
+      "full_question_bank": [
+        "What do you believe happens to the relationship if you say no?",
+        "Is the giving coming from love, or from fear of what happens if you don't?",
+        "What would you need to believe about yourself to hold this boundary?",
+        "Whose voice do you hear when you feel guilty for keeping your own money?"
+      ]
+    },
+    {
+      "id": "FAM_001",
+      "retrieval_text": "family roles the responsible one the black sheep the fixer identity parents FAMILY ROLE LOCK The role you play in your family was assigned before you could choose. Who were you before the family needed you to be something specific?",
+      "reframe": "The role you play in your family was assigned before you could choose.",
+      "question": "Who were you before the family needed you to be something specific?",
+      "cognitive_pattern": "FAMILY_ROLE_LOCK",
+      "theme_tags": [
+        "family",
+        "roles",
+        "the responsible one",
+        "the black sheep",
+        "the fixer",
+        "identity",
+        "parents"
+      ],
+      "rewire_target": "Separate family-assigned identity from chosen self \u2014 recover suppressed dimensions.",
+      "full_question_bank": [
+        "What role were you cast in your family \u2014 and who cast you in it?",
+        "What happens in the family system when you step outside that role?",
+        "How much of who you are today was designed to function inside that family?",
+        "What parts of yourself didn't fit the role and got quietly set aside?"
+      ]
+    },
+    {
+      "id": "FAM_002",
+      "retrieval_text": "family parents approval validation never good enough disappointing parents pleasing PARENTAL APPROVAL LOOP The approval you're still seeking was never fully given \u2014 and waiting hasn't changed that. What would you do if their opinion simply stopped reaching you?",
+      "reframe": "The approval you're still seeking was never fully given \u2014 and waiting hasn't changed that.",
+      "question": "What would you do if their opinion simply stopped reaching you?",
+      "cognitive_pattern": "PARENTAL_APPROVAL_LOOP",
+      "theme_tags": [
+        "family",
+        "parents",
+        "approval",
+        "validation",
+        "never good enough",
+        "disappointing parents",
+        "pleasing"
+      ],
+      "rewire_target": "Transition from external parental validation to internal self-authorization.",
+      "full_question_bank": [
+        "What would you do differently tomorrow if their approval was permanently unavailable?",
+        "What have you built, chosen, or avoided because of how they would see it?",
+        "At what age did you decide their approval was the measure of your worth?",
+        "What would it mean to finally stop waiting for the verdict?"
+      ]
+    },
+    {
+      "id": "FAM_003",
+      "retrieval_text": "family beliefs inherited patterns what we were taught family values questioning upbringing INHERITED BELIEF BLINDNESS The beliefs running your life were written before you could read. Which belief about yourself did you choose, and which were you handed?",
+      "reframe": "The beliefs running your life were written before you could read.",
+      "question": "Which belief about yourself did you choose, and which were you handed?",
+      "cognitive_pattern": "INHERITED_BELIEF_BLINDNESS",
+      "theme_tags": [
+        "family",
+        "beliefs",
+        "inherited patterns",
+        "what we were taught",
+        "family values",
+        "questioning upbringing"
+      ],
+      "rewire_target": "Develop examined beliefs \u2014 distinguish inherited programming from chosen values.",
+      "full_question_bank": [
+        "What belief about yourself have you never actually examined \u2014 you just received it?",
+        "What did your family teach you about yourself without ever saying it directly?",
+        "Which of your values are genuinely yours, and which are borrowed?",
+        "What would you believe about yourself if you had grown up in a completely different family?"
+      ]
+    },
+    {
+      "id": "FAM_004",
+      "retrieval_text": "family caretaking responsibility burden aging parents siblings burnout resentment CARETAKER EXHAUSTION The one who holds everyone else together rarely asks who is holding them. What do you need that you've never allowed yourself to ask for?",
+      "reframe": "The one who holds everyone else together rarely asks who is holding them.",
+      "question": "What do you need that you've never allowed yourself to ask for?",
+      "cognitive_pattern": "CARETAKER_EXHAUSTION",
+      "theme_tags": [
+        "family",
+        "caretaking",
+        "responsibility",
+        "burden",
+        "aging parents",
+        "siblings",
+        "burnout",
+        "resentment"
+      ],
+      "rewire_target": "Build reciprocal care \u2014 recognizing own needs as legitimate without guilt.",
+      "full_question_bank": [
+        "When did you decide that your needs come last in this family?",
+        "What are you afraid would happen to the family system if you stopped holding it together?",
+        "Is the caretaking coming from love \u2014 or from fear of what you'd feel if you stopped?",
+        "What do you need right now that you would never ask for?"
+      ]
+    },
+    {
+      "id": "FAM_005",
+      "retrieval_text": "family estrangement cutting off distance toxic family guilt about leaving no contact ESTRANGEMENT AMBIGUITY You can make the right choice and still grieve it completely. What are you mourning underneath the relief?",
+      "reframe": "You can make the right choice and still grieve it completely.",
+      "question": "What are you mourning underneath the relief?",
+      "cognitive_pattern": "ESTRANGEMENT_AMBIGUITY",
+      "theme_tags": [
+        "family",
+        "estrangement",
+        "cutting off",
+        "distance",
+        "toxic family",
+        "guilt about leaving",
+        "no contact"
+      ],
+      "rewire_target": "Hold complexity of difficult family decisions \u2014 right and painful can coexist.",
+      "full_question_bank": [
+        "What are you grieving about this distance that you haven't fully acknowledged?",
+        "Is the guilt telling you that you did something wrong \u2014 or that you love someone you had to move away from?",
+        "What did you need from this relationship that it was never able to give?",
+        "What would you lose if you fully accepted that this was the right choice?"
+      ]
+    },
+    {
+      "id": "FRD_001",
+      "retrieval_text": "friendship people pleasing being liked performing authenticity social mask exhaustion FRIENDSHIP PERFORMANCE The exhaustion after being with people is often the cost of the performance, not the company. What would you say if you weren't managing their impression of you?",
+      "reframe": "The exhaustion after being with people is often the cost of the performance, not the company.",
+      "question": "What would you say if you weren't managing their impression of you?",
+      "cognitive_pattern": "FRIENDSHIP_PERFORMANCE",
+      "theme_tags": [
+        "friendship",
+        "people pleasing",
+        "being liked",
+        "performing",
+        "authenticity",
+        "social mask",
+        "exhaustion"
+      ],
+      "rewire_target": "Move from performed friendship to inhabited presence \u2014 authenticity over approval.",
+      "full_question_bank": [
+        "Which version of yourself shows up in this friendship \u2014 and how close is it to the actual one?",
+        "What would you say or do differently if you weren't managing how they see you?",
+        "What part of yourself do you keep off the table with this person?",
+        "What are you afraid they'd think if they saw the unedited version?"
+      ]
+    },
+    {
+      "id": "FRD_002",
+      "retrieval_text": "friendship one sided always giving never reciprocated resentment being used boundaries ONE SIDED GIVING The imbalance continued because both people let it \u2014 including you. What do you get from being the one who gives more?",
+      "reframe": "The imbalance continued because both people let it \u2014 including you.",
+      "question": "What do you get from being the one who gives more?",
+      "cognitive_pattern": "ONE_SIDED_GIVING",
+      "theme_tags": [
+        "friendship",
+        "one sided",
+        "always giving",
+        "never reciprocated",
+        "resentment",
+        "being used",
+        "boundaries"
+      ],
+      "rewire_target": "Develop reciprocity awareness \u2014 recognize patterns of over-giving and the needs they serve.",
+      "full_question_bank": [
+        "When did you decide that giving more than you receive is just how this relationship works?",
+        "What would change if you simply gave the same amount they give \u2014 no more?",
+        "What do you get from being the one who gives more?",
+        "Have you ever directly asked for what you need in this friendship?"
+      ]
+    },
+    {
+      "id": "FRD_003",
+      "retrieval_text": "friendship drifting apart lost friends growing apart loneliness change FRIENDSHIP GRIEF Growing apart is sometimes two people growing \u2014 just in different directions. Are you grieving the person, or who you were when you were close?",
+      "reframe": "Growing apart is sometimes two people growing \u2014 just in different directions.",
+      "question": "Are you grieving the person, or who you were when you were close?",
+      "cognitive_pattern": "FRIENDSHIP_GRIEF",
+      "theme_tags": [
+        "friendship",
+        "drifting apart",
+        "lost friends",
+        "growing apart",
+        "loneliness",
+        "change"
+      ],
+      "rewire_target": "Normalize friendship evolution \u2014 distinguish ending from transformation.",
+      "full_question_bank": [
+        "Is this friendship ending, or evolving into something your current self doesn't need in the same way?",
+        "What did this friendship give you that you're afraid you won't find elsewhere?",
+        "What version of yourself existed in this friendship that you may have outgrown?",
+        "What are you grieving \u2014 the person, or who you were when you were close?"
+      ]
+    },
+    {
+      "id": "FRD_004",
+      "retrieval_text": "friendship jealousy envy friend's success comparison feeling left behind SOCIAL COMPARISON POISON Jealousy of someone you love is information about yourself wearing someone else's face. What is their success pointing to that you want but haven't named?",
+      "reframe": "Jealousy of someone you love is information about yourself wearing someone else's face.",
+      "question": "What is their success pointing to that you want but haven't named?",
+      "cognitive_pattern": "SOCIAL_COMPARISON_POISON",
+      "theme_tags": [
+        "friendship",
+        "jealousy",
+        "envy",
+        "friend's success",
+        "comparison",
+        "feeling left behind"
+      ],
+      "rewire_target": "Transform jealousy into self-knowledge \u2014 use envy as directional data.",
+      "full_question_bank": [
+        "Is the feeling jealousy \u2014 or is it a signal about something you want that you haven't admitted?",
+        "What specifically do they have that you want \u2014 the thing itself, or what it represents?",
+        "What would it mean about your friendship if you were genuinely happy for them?",
+        "What does their success make you afraid about your own path?"
+      ]
+    },
+    {
+      "id": "ADD_001",
+      "retrieval_text": "addiction alcohol substances habits escape numbing coping dependency ADDICTION AS SOLUTION It became a habit because it worked \u2014 the question is what it was working on. What feeling does it make disappear that you haven't found another way to face?",
+      "reframe": "It became a habit because it worked \u2014 the question is what it was working on.",
+      "question": "What feeling does it make disappear that you haven't found another way to face?",
+      "cognitive_pattern": "ADDICTION_AS_SOLUTION",
+      "theme_tags": [
+        "addiction",
+        "alcohol",
+        "substances",
+        "habits",
+        "escape",
+        "numbing",
+        "coping",
+        "dependency"
+      ],
+      "rewire_target": "Humanize the addiction \u2014 understand the unmet need beneath the behavior.",
+      "full_question_bank": [
+        "What feeling does it reliably make go away \u2014 even temporarily?",
+        "When you imagine not having it available, what's the first feeling that arrives?",
+        "What was happening in your life when this became a pattern rather than an occasional choice?",
+        "What problem was it originally solving that you still haven't found another way to solve?"
+      ]
+    },
+    {
+      "id": "ADD_002",
+      "retrieval_text": "addiction relapse shame failure trying to quit self-punishment cycles RELAPSE SHAME SPIRAL The shame after the relapse feeds the next one \u2014 it's the same fuel. What were you carrying in the days before that you hadn't put down?",
+      "reframe": "The shame after the relapse feeds the next one \u2014 it's the same fuel.",
+      "question": "What were you carrying in the days before that you hadn't put down?",
+      "cognitive_pattern": "RELAPSE_SHAME_SPIRAL",
+      "theme_tags": [
+        "addiction",
+        "relapse",
+        "shame",
+        "failure",
+        "trying to quit",
+        "self-punishment",
+        "cycles"
+      ],
+      "rewire_target": "Break shame-relapse cycle \u2014 build self-compassionate accountability instead.",
+      "full_question_bank": [
+        "What does relapsing mean to you about who you are \u2014 not what you did, but who you are?",
+        "Is the self-punishment helping \u2014 or is it the thing that makes the next episode more likely?",
+        "What would self-compassion look like here \u2014 not excusing it, but not destroying yourself over it?",
+        "What were the conditions in the days before \u2014 what was building up?"
+      ]
+    },
+    {
+      "id": "ADD_003",
+      "retrieval_text": "addiction denial functional high functioning still managing justifying it's not that bad FUNCTIONAL DENIAL Still functioning doesn't mean the cost isn't being paid \u2014 just that the bill hasn't arrived yet. What has it quietly cost you that you leave out of the calculation?",
+      "reframe": "Still functioning doesn't mean the cost isn't being paid \u2014 just that the bill hasn't arrived yet.",
+      "question": "What has it quietly cost you that you leave out of the calculation?",
+      "cognitive_pattern": "FUNCTIONAL_DENIAL",
+      "theme_tags": [
+        "addiction",
+        "denial",
+        "functional",
+        "high functioning",
+        "still managing",
+        "justifying",
+        "it's not that bad"
+      ],
+      "rewire_target": "Dissolve functional denial \u2014 honest accounting of actual costs beyond performance.",
+      "full_question_bank": [
+        "What would someone who loves you say about this if they were being completely honest?",
+        "What are you comparing yourself to in order to conclude it's not that bad?",
+        "What has it quietly cost you that you don't include in the calculation?",
+        "What would life look like if this pattern simply wasn't part of it?"
+      ]
+    },
+    {
+      "id": "ADD_004",
+      "retrieval_text": "addiction identity who am I without it quitting social drinking part of personality IDENTITY ADDICTION MERGE The fear of stopping is often the fear of meeting whoever is underneath. Who are you afraid you'd find if this weren't there to fill the space?",
+      "reframe": "The fear of stopping is often the fear of meeting whoever is underneath.",
+      "question": "Who are you afraid you'd find if this weren't there to fill the space?",
+      "cognitive_pattern": "IDENTITY_ADDICTION_MERGE",
+      "theme_tags": [
+        "addiction",
+        "identity",
+        "who am I without it",
+        "quitting",
+        "social drinking",
+        "part of personality"
+      ],
+      "rewire_target": "Separate behavior from identity \u2014 develop a self-concept not dependent on the pattern.",
+      "full_question_bank": [
+        "Who were you before this became a consistent part of your life?",
+        "What would you do with the time, the money, the emotional space if it weren't there?",
+        "What parts of your social life or identity are built around it?",
+        "Who do you think you'd be without it \u2014 and is that person more frightening or more free?"
+      ]
+    },
+    {
+      "id": "TAO_001",
+      "retrieval_text": "forcing trying too hard effortless action wu wei control resistance flow FORCED ACTION Sometimes the most powerful move is to stop making moves. What would you see about this if you stopped pushing long enough to look?",
+      "reframe": "Sometimes the most powerful move is to stop making moves.",
+      "question": "What would you see about this if you stopped pushing long enough to look?",
+      "cognitive_pattern": "FORCED_ACTION",
+      "theme_tags": [
+        "forcing",
+        "trying too hard",
+        "effortless action",
+        "wu wei",
+        "control",
+        "resistance",
+        "flow"
+      ],
+      "rewire_target": "Develop strategic non-action \u2014 distinguishing effortless alignment from passive avoidance.",
+      "full_question_bank": [
+        "What would happen if you stopped pushing this for two weeks \u2014 not gave up, just stopped pushing?",
+        "Is the effort you're applying actually moving things, or just making you feel like you're doing something?",
+        "What would the path of least resistance look like \u2014 and why does it feel like cheating?",
+        "What are you afraid stillness would confirm about this situation?"
+      ]
+    },
+    {
+      "id": "TAO_002",
+      "retrieval_text": "opposites balance extremes all or nothing black and white yin yang POLARITY BLINDNESS The quality you most identify with is often the one most hiding its opposite. What are you refusing to be that might be exactly what this situation needs?",
+      "reframe": "The quality you most identify with is often the one most hiding its opposite.",
+      "question": "What are you refusing to be that might be exactly what this situation needs?",
+      "cognitive_pattern": "POLARITY_BLINDNESS",
+      "theme_tags": [
+        "opposites",
+        "balance",
+        "extremes",
+        "all or nothing",
+        "black and white",
+        "yin yang"
+      ],
+      "rewire_target": "Develop polarity integration \u2014 holding apparent opposites as complementary rather than mutually exclusive.",
+      "full_question_bank": [
+        "What quality do you most pride yourself on \u2014 and what is its shadow side?",
+        "What are you refusing to be that might actually be part of a healthier balance?",
+        "Where in your life are you so far in one direction that you've lost access to the other?",
+        "What would the opposite of your current approach look like \u2014 and what does imagining it bring up?"
+      ]
+    },
+    {
+      "id": "TAO_003",
+      "retrieval_text": "productivity usefulness rest doing nothing worth busyness value USEFULNESS OBSESSION The parts of you that produce nothing might be the parts holding everything else together. What do you allow yourself to value in others that you won't allow in yourself?",
+      "reframe": "The parts of you that produce nothing might be the parts holding everything else together.",
+      "question": "What do you allow yourself to value in others that you won't allow in yourself?",
+      "cognitive_pattern": "USEFULNESS_OBSESSION",
+      "theme_tags": [
+        "productivity",
+        "usefulness",
+        "rest",
+        "doing nothing",
+        "worth",
+        "busyness",
+        "value"
+      ],
+      "rewire_target": "Expand the definition of value beyond productivity \u2014 recover intrinsic worth.",
+      "full_question_bank": [
+        "What do you do that has no measurable outcome but that your life would be worse without?",
+        "When you rest without productivity, what do you tell yourself about yourself?",
+        "What would you value in a person that you don't allow yourself to value in yourself?",
+        "What part of your worth is entirely separate from what you produce?"
+      ]
+    },
+    {
+      "id": "ZEN_001",
+      "retrieval_text": "assumptions expertise knowing too much rigid thinking fresh eyes openness BEGINNER MIND LOSS Familiarity is sometimes just another word for the blindspot you've stopped looking at. What are you too experienced with this situation to see clearly anymore?",
+      "reframe": "Familiarity is sometimes just another word for the blindspot you've stopped looking at.",
+      "question": "What are you too experienced with this situation to see clearly anymore?",
+      "cognitive_pattern": "BEGINNER_MIND_LOSS",
+      "theme_tags": [
+        "assumptions",
+        "expertise",
+        "knowing too much",
+        "rigid thinking",
+        "fresh eyes",
+        "openness"
+      ],
+      "rewire_target": "Restore beginner's mind \u2014 approach familiar situations with genuine fresh inquiry.",
+      "full_question_bank": [
+        "What have you stopped questioning about this situation because you've been here before?",
+        "What would a complete stranger notice about this that you no longer see?",
+        "What question have you stopped asking because you assumed you already knew the answer?",
+        "What if what's familiar about this is exactly what's making it harder to navigate?"
+      ]
+    },
+    {
+      "id": "ZEN_002",
+      "retrieval_text": "overthinking logic analysis stuck in head can't decide too much thinking RATIONAL LOCK The analysis that feels like progress might be the thing keeping the answer just out of reach. What do you already know that the thinking is helping you avoid?",
+      "reframe": "The analysis that feels like progress might be the thing keeping the answer just out of reach.",
+      "question": "What do you already know that the thinking is helping you avoid?",
+      "cognitive_pattern": "RATIONAL_LOCK",
+      "theme_tags": [
+        "overthinking",
+        "logic",
+        "analysis",
+        "stuck in head",
+        "can't decide",
+        "too much thinking"
+      ],
+      "rewire_target": "Develop non-analytical knowing \u2014 access somatic and intuitive intelligence alongside rational thought.",
+      "full_question_bank": [
+        "What does your gut say \u2014 before your mind has a chance to argue with it?",
+        "What would you do if you had to decide in the next ten seconds with no time to think?",
+        "What do you already know that all the thinking is helping you avoid acknowledging?",
+        "What if the answer isn't something you'll find by thinking \u2014 but something you'll find by stopping?"
+      ]
+    },
+    {
+      "id": "ZEN_003",
+      "retrieval_text": "living in concepts not present theory vs experience abstract thinking missing the moment CONCEPT OVER EXPERIENCE Having a framework for the experience is sometimes a way of avoiding the experience itself. What would you feel if you stopped explaining this and just sat inside it?",
+      "reframe": "Having a framework for the experience is sometimes a way of avoiding the experience itself.",
+      "question": "What would you feel if you stopped explaining this and just sat inside it?",
+      "cognitive_pattern": "CONCEPT_OVER_EXPERIENCE",
+      "theme_tags": [
+        "living in concepts",
+        "not present",
+        "theory vs experience",
+        "abstract thinking",
+        "missing the moment"
+      ],
+      "rewire_target": "Bridge concept and experience \u2014 develop capacity for direct encounter rather than mediated understanding.",
+      "full_question_bank": [
+        "What are you understanding about this situation that you're not yet fully experiencing?",
+        "Is there a way you use analysis to keep yourself at a safe distance from what's actually happening?",
+        "What would it feel like to just be in this situation \u2014 without narrating or explaining it?",
+        "What would you have to feel if you stopped thinking about it so carefully?"
+      ]
+    },
+    {
+      "id": "ZEN_004",
+      "retrieval_text": "presence now escape distraction not wanting to be here avoidance of present THIS MOMENT ESCAPE The urge to escape the present is always pointing at something the present contains. What is this moment holding that makes anywhere else feel better?",
+      "reframe": "The urge to escape the present is always pointing at something the present contains.",
+      "question": "What is this moment holding that makes anywhere else feel better?",
+      "cognitive_pattern": "THIS_MOMENT_ESCAPE",
+      "theme_tags": [
+        "presence",
+        "now",
+        "escape",
+        "distraction",
+        "not wanting to be here",
+        "avoidance of present"
+      ],
+      "rewire_target": "Develop present-moment tolerance \u2014 sitting with what is rather than escaping to what could be.",
+      "full_question_bank": [
+        "What is 'here' holding that makes somewhere else feel preferable?",
+        "What would you have to face if you stopped looking for somewhere better to be?",
+        "Is the present moment actually unbearable \u2014 or does it just feel that way compared to an imagined elsewhere?",
+        "What part of right now, if you really looked at it, isn't actually as bad as the urgency to leave it suggests?"
+      ]
+    },
+    {
+      "id": "VP_001",
+      "retrieval_text": "layers of self body mind emotion deeper self root cause symptoms vs source SURFACE LEVEL DIAGNOSIS The layer you're working on and the layer where the problem lives aren't always the same. Where does this live in your body \u2014 not your analysis of it, the actual physical location?",
+      "reframe": "The layer you're working on and the layer where the problem lives aren't always the same.",
+      "question": "Where does this live in your body \u2014 not your analysis of it, the actual physical location?",
+      "cognitive_pattern": "SURFACE_LEVEL_DIAGNOSIS",
+      "theme_tags": [
+        "layers of self",
+        "body",
+        "mind",
+        "emotion",
+        "deeper self",
+        "root cause",
+        "symptoms vs source"
+      ],
+      "rewire_target": "Develop multi-layer self-awareness \u2014 address problems at the level where they actually originate.",
+      "full_question_bank": [
+        "Where do you feel this in your body \u2014 not what you think about it, where you feel it?",
+        "If this difficulty had a location in your body, where would it live?",
+        "What layer of yourself have you been ignoring while trying to fix the visible layer?",
+        "When you tend to the body \u2014 sleep, movement, breath \u2014 what changes about how the problem looks?"
+      ]
+    },
+    {
+      "id": "VP_002",
+      "retrieval_text": "mood mental state i'm just like this personality fixed character emotional states STATE AS TRAIT What you call your personality is often just your most frequent state wearing a permanent badge. Who are you in your clearest moments \u2014 and how far is that from who you think you are?",
+      "reframe": "What you call your personality is often just your most frequent state wearing a permanent badge.",
+      "question": "Who are you in your clearest moments \u2014 and how far is that from who you think you are?",
+      "cognitive_pattern": "STATE_AS_TRAIT",
+      "theme_tags": [
+        "mood",
+        "mental state",
+        "i'm just like this",
+        "personality",
+        "fixed character",
+        "emotional states"
+      ],
+      "rewire_target": "Distinguish state from trait \u2014 recognize that habitual mental states can be changed, unlike fixed character.",
+      "full_question_bank": [
+        "What mental state do you spend the most time in \u2014 and have you confused that with your character?",
+        "Who are you in your clearest, most rested, most aligned moments \u2014 and how different is that person?",
+        "What conditions produce the version of you that you most want to be?",
+        "Is the 'I'm just like this' description of yourself an observation or an acceptance of something that could change?"
+      ]
+    },
+    {
+      "id": "VP_003",
+      "retrieval_text": "patterns why does this keep happening same situation karma deep impressions conditioning UNCONSCIOUS REPETITION What keeps happening to you is partly what you keep bringing into every room without knowing. What unfinished thing might this situation be trying to complete?",
+      "reframe": "What keeps happening to you is partly what you keep bringing into every room without knowing.",
+      "question": "What unfinished thing might this situation be trying to complete?",
+      "cognitive_pattern": "UNCONSCIOUS_REPETITION",
+      "theme_tags": [
+        "patterns",
+        "why does this keep happening",
+        "same situation",
+        "karma",
+        "deep impressions",
+        "conditioning"
+      ],
+      "rewire_target": "Develop vasana awareness \u2014 recognizing deep impressions driving repetitive patterns.",
+      "full_question_bank": [
+        "This pattern \u2014 when did you first encounter it? Not this version, but this shape?",
+        "What belief about yourself or the world would have to be true for this to keep happening?",
+        "If this pattern were trying to resolve something \u2014 what unfinished thing would it be finishing?",
+        "What would break the loop \u2014 not outside, but in how you enter the same kind of situation?"
+      ]
+    },
+    {
+      "id": "VP_004",
+      "retrieval_text": "focus concentration distraction scattered can't focus attention span multitasking ATTENTION FRAGMENTATION The distracted mind is often a mind that learned that staying with things was dangerous. What does your attention run toward when it runs away \u2014 and what does that tell you?",
+      "reframe": "The distracted mind is often a mind that learned that staying with things was dangerous.",
+      "question": "What does your attention run toward when it runs away \u2014 and what does that tell you?",
+      "cognitive_pattern": "ATTENTION_FRAGMENTATION",
+      "theme_tags": [
+        "focus",
+        "concentration",
+        "distraction",
+        "scattered",
+        "can't focus",
+        "attention span",
+        "multitasking"
+      ],
+      "rewire_target": "Rebuild concentration as self-trust \u2014 attention as a capacity to be with oneself.",
+      "full_question_bank": [
+        "What happens when you try to sit with one thing for an extended period \u2014 what does the mind run toward?",
+        "Is the distraction random, or does it pull you toward specific things? What things?",
+        "What are you avoiding by keeping your attention moving?",
+        "When were you last fully absorbed in something \u2014 what made that possible?"
+      ]
+    },
+    {
+      "id": "TAO_004",
+      "retrieval_text": "flexibility stubbornness rigidity adapting change being strong not bending RIGIDITY AS STRENGTH The most rigid things break first \u2014 the softest things outlast everything. What are you protecting by refusing to bend here?",
+      "reframe": "The most rigid things break first \u2014 the softest things outlast everything.",
+      "question": "What are you protecting by refusing to bend here?",
+      "cognitive_pattern": "RIGIDITY_AS_STRENGTH",
+      "theme_tags": [
+        "flexibility",
+        "stubbornness",
+        "rigidity",
+        "adapting",
+        "change",
+        "being strong",
+        "not bending"
+      ],
+      "rewire_target": "Develop adaptive resilience \u2014 strength through flexibility rather than through rigidity.",
+      "full_question_bank": [
+        "Where in this situation are you being rigid in a way you're calling strength?",
+        "What would become possible if you approached this with more flexibility and less force?",
+        "What are you protecting by holding your current position so firmly?",
+        "What is the version of this where you bend without breaking \u2014 and what does it look like?"
+      ]
+    },
+    {
+      "id": "TRA_001",
+      "retrieval_text": "trauma anxiety always alert can't relax waiting for something bad hypervigilance safety HYPERVIGILANCE AS NORMAL The alarm that kept you safe then doesn't know that 'then' is over. What would it feel like to actually feel safe \u2014 not just know you are?",
+      "reframe": "The alarm that kept you safe then doesn't know that 'then' is over.",
+      "question": "What would it feel like to actually feel safe \u2014 not just know you are?",
+      "cognitive_pattern": "HYPERVIGILANCE_AS_NORMAL",
+      "theme_tags": [
+        "trauma",
+        "anxiety",
+        "always alert",
+        "can't relax",
+        "waiting for something bad",
+        "hypervigilance",
+        "safety"
+      ],
+      "rewire_target": "Develop nervous system awareness \u2014 distinguish past threat from present reality.",
+      "full_question_bank": [
+        "When did you first learn that the world required this level of alertness?",
+        "What would it actually feel like to feel safe \u2014 not logically know you're safe, but feel it?",
+        "What is the vigilance protecting you from that you don't want to be unprotected from?",
+        "What has the constant readiness cost you in terms of rest, presence, or connection?"
+      ]
+    },
+    {
+      "id": "TRA_002",
+      "retrieval_text": "trauma identity survivor defined by past what happened to me victim story TRAUMA AS IDENTITY What happened to you is part of your story \u2014 the question is how much of the page it gets. Who are you that exists separately from what you survived?",
+      "reframe": "What happened to you is part of your story \u2014 the question is how much of the page it gets.",
+      "question": "Who are you that exists separately from what you survived?",
+      "cognitive_pattern": "TRAUMA_AS_IDENTITY",
+      "theme_tags": [
+        "trauma",
+        "identity",
+        "survivor",
+        "defined by past",
+        "what happened to me",
+        "victim",
+        "story"
+      ],
+      "rewire_target": "Develop post-traumatic identity \u2014 self-concept that includes but isn't organized around the wound.",
+      "full_question_bank": [
+        "Who are you in addition to what happened to you?",
+        "What would you explore about yourself if the difficult past weren't the primary lens?",
+        "What parts of you existed before this \u2014 and are any of them still here?",
+        "What would it mean to carry this lightly \u2014 not to erase it, but not to be organized by it?"
+      ]
+    },
+    {
+      "id": "TRA_003",
+      "retrieval_text": "trauma numbness can't feel disconnected flat emotional unavailability shutdown EMOTIONAL SHUTDOWN Numbness is the system's way of surviving what feeling couldn't hold \u2014 it was protection, not absence. What feeling, if it returned, would you be most afraid to have back?",
+      "reframe": "Numbness is the system's way of surviving what feeling couldn't hold \u2014 it was protection, not absence.",
+      "question": "What feeling, if it returned, would you be most afraid to have back?",
+      "cognitive_pattern": "EMOTIONAL_SHUTDOWN",
+      "theme_tags": [
+        "trauma",
+        "numbness",
+        "can't feel",
+        "disconnected",
+        "flat",
+        "emotional unavailability",
+        "shutdown"
+      ],
+      "rewire_target": "Restore emotional contact \u2014 gradual, safe return to felt experience.",
+      "full_question_bank": [
+        "When did you first notice that you'd stopped feeling things the way you used to?",
+        "What feeling, if it came back, would you be most afraid of?",
+        "What did the numbness originally protect you from \u2014 and is that protection still necessary?",
+        "Is there anywhere in your life where feeling still gets through \u2014 even slightly?"
+      ]
+    },
+    {
+      "id": "TRA_004",
+      "retrieval_text": "trauma trust betrayal can't trust anyone walls up self-protection intimacy TRUST COLLAPSE The wall that kept out betrayal also kept out connection \u2014 both things are true. What has the wall kept out that you didn't actually want kept out?",
+      "reframe": "The wall that kept out betrayal also kept out connection \u2014 both things are true.",
+      "question": "What has the wall kept out that you didn't actually want kept out?",
+      "cognitive_pattern": "TRUST_COLLAPSE",
+      "theme_tags": [
+        "trauma",
+        "trust",
+        "betrayal",
+        "can't trust anyone",
+        "walls up",
+        "self-protection",
+        "intimacy"
+      ],
+      "rewire_target": "Rebuild selective trust \u2014 distinguishing blanket self-protection from discerning openness.",
+      "full_question_bank": [
+        "What would have to be true about a person for you to trust them \u2014 have you ever articulated that?",
+        "What is the difference between choosing who to trust carefully and deciding trust itself is unavailable?",
+        "What has the wall kept out that you didn't want kept out?",
+        "What would you risk by letting someone in slightly \u2014 just slightly \u2014 further than you currently do?"
+      ]
+    },
+    {
+      "id": "PERF_001",
+      "retrieval_text": "perfectionism never good enough high standards fear of failure can't finish procrastination PERFECTIONISM AS SAFETY The drive for perfect is rarely about the work \u2014 it's about what imperfect says about you. What would imperfect work say about you that you can't tolerate?",
+      "reframe": "The drive for perfect is rarely about the work \u2014 it's about what imperfect says about you.",
+      "question": "What would imperfect work say about you that you can't tolerate?",
+      "cognitive_pattern": "PERFECTIONISM_AS_SAFETY",
+      "theme_tags": [
+        "perfectionism",
+        "never good enough",
+        "high standards",
+        "fear of failure",
+        "can't finish",
+        "procrastination"
+      ],
+      "rewire_target": "Distinguish excellence from perfectionism \u2014 high standards from fear-based impossibility.",
+      "full_question_bank": [
+        "What are you afraid would be revealed about you if the work were imperfect and visible?",
+        "What is the belief underneath 'it has to be perfect'?",
+        "Whose voice does the inner critic sound like when it says it's not good enough?",
+        "What have you not started or not finished because the standard felt impossible from the beginning?"
+      ]
+    },
+    {
+      "id": "PERF_002",
+      "retrieval_text": "perfectionism can't finish almost done leaving things incomplete procrastination starting not finishing COMPLETION PHOBIA The unfinished thing cannot be judged \u2014 which is sometimes exactly why it stays unfinished. What would finishing take away that staying almost-done keeps safely available?",
+      "reframe": "The unfinished thing cannot be judged \u2014 which is sometimes exactly why it stays unfinished.",
+      "question": "What would finishing take away that staying almost-done keeps safely available?",
+      "cognitive_pattern": "COMPLETION_PHOBIA",
+      "theme_tags": [
+        "perfectionism",
+        "can't finish",
+        "almost done",
+        "leaving things incomplete",
+        "procrastination",
+        "starting not finishing"
+      ],
+      "rewire_target": "Identify and dissolve completion anxiety \u2014 separate the act of finishing from the fear of judgment.",
+      "full_question_bank": [
+        "What happens in your imagination the moment something is done and visible to others?",
+        "Is there a pattern of things that get 90% complete and then stall?",
+        "What does finishing something take away that unfinished keeps available?",
+        "What is the fear that arrives right at the edge of completion?"
+      ]
+    },
+    {
+      "id": "PERF_003",
+      "retrieval_text": "perfectionism all or nothing if i can't do it perfectly why bother giving up quitting ALL OR NOTHING EFFORT Between perfect and pointless is where everything real actually gets done. What would you begin if 'okay' was an acceptable place to start?",
+      "reframe": "Between perfect and pointless is where everything real actually gets done.",
+      "question": "What would you begin if 'okay' was an acceptable place to start?",
+      "cognitive_pattern": "ALL_OR_NOTHING_EFFORT",
+      "theme_tags": [
+        "perfectionism",
+        "all or nothing",
+        "if i can't do it perfectly why bother",
+        "giving up",
+        "quitting"
+      ],
+      "rewire_target": "Develop graduated standards \u2014 the capacity to value effort and progress rather than only outcome.",
+      "full_question_bank": [
+        "What would 'good enough for now' look like \u2014 and why does that feel like failure?",
+        "What have you abandoned because it couldn't meet the standard you set at the beginning?",
+        "What is the cost of the all-or-nothing standard in terms of things that never got to exist at all?",
+        "What would you begin if 'okay' were an acceptable place to start?"
+      ]
+    },
+    {
+      "id": "PP_001",
+      "retrieval_text": "people pleasing can't say no approval seeking conflict avoidance always agreeing resentment CHRONIC PEOPLE PLEASING The inability to disappoint others is often the inability to be honest with them. What do you imagine would actually happen if you said no?",
+      "reframe": "The inability to disappoint others is often the inability to be honest with them.",
+      "question": "What do you imagine would actually happen if you said no?",
+      "cognitive_pattern": "CHRONIC_PEOPLE_PLEASING",
+      "theme_tags": [
+        "people pleasing",
+        "can't say no",
+        "approval seeking",
+        "conflict avoidance",
+        "always agreeing",
+        "resentment"
+      ],
+      "rewire_target": "Develop authentic relating \u2014 moving from appeasement-based interaction to honest engagement.",
+      "full_question_bank": [
+        "When did you first learn that keeping others comfortable was your responsibility?",
+        "What do you imagine would happen to the relationship if you said no?",
+        "What has never saying no cost you that you haven't fully accounted for?",
+        "What would the version of you who said no occasionally look and feel like?"
+      ]
+    },
+    {
+      "id": "PP_002",
+      "retrieval_text": "people pleasing conflict avoidance peace keeping can't handle disagreement confrontation avoiding difficult conversations CONFLICT EQUALS DANGER The relationship you're protecting from conflict might be the one that most needs it. What would you say if you believed the relationship was strong enough to hold it?",
+      "reframe": "The relationship you're protecting from conflict might be the one that most needs it.",
+      "question": "What would you say if you believed the relationship was strong enough to hold it?",
+      "cognitive_pattern": "CONFLICT_EQUALS_DANGER",
+      "theme_tags": [
+        "people pleasing",
+        "conflict avoidance",
+        "peace keeping",
+        "can't handle disagreement",
+        "confrontation",
+        "avoiding difficult conversations"
+      ],
+      "rewire_target": "Develop conflict tolerance \u2014 distinguishing productive disagreement from relationship destruction.",
+      "full_question_bank": [
+        "What do you believe conflict means for a relationship \u2014 what's the catastrophic version in your mind?",
+        "What relationships in your life have survived honest disagreement \u2014 and what did that teach you?",
+        "Is the peace you're maintaining real, or is it the surface over something building underneath?",
+        "What would you say if you believed the relationship could hold it?"
+      ]
+    },
+    {
+      "id": "PP_003",
+      "retrieval_text": "people pleasing giving self away no identity what do I want selflessness lost self SELF ERASURE GENEROSITY Selflessness that requires erasing yourself isn't generosity \u2014 it's a different kind of loss. What do you actually want \u2014 not what works for everyone, what you want?",
+      "reframe": "Selflessness that requires erasing yourself isn't generosity \u2014 it's a different kind of loss.",
+      "question": "What do you actually want \u2014 not what works for everyone, what you want?",
+      "cognitive_pattern": "SELF_ERASURE_GENEROSITY",
+      "theme_tags": [
+        "people pleasing",
+        "giving self away",
+        "no identity",
+        "what do I want",
+        "selflessness",
+        "lost self"
+      ],
+      "rewire_target": "Recover self-knowledge \u2014 distinguishing genuine generosity from self-erasure under the label of care.",
+      "full_question_bank": [
+        "When someone asks what you want \u2014 what happens in the moment before you answer?",
+        "What do you actually prefer, enjoy, and want \u2014 separate from what makes others comfortable?",
+        "How long could you articulate your own preferences without referencing someone else's?",
+        "When did your own desires start feeling like a disruption rather than a legitimate voice?"
+      ]
+    },
+    {
+      "id": "PP_004",
+      "retrieval_text": "people pleasing exhaustion performing social mask can't be myself always on tired of pretending MASK EXHAUSTION The tiredness after being with people is the gap between the you that showed up and the you that stayed behind. Who is the you that stayed home while the other version went to be with people?",
+      "reframe": "The tiredness after being with people is the gap between the you that showed up and the you that stayed behind.",
+      "question": "Who is the you that stayed home while the other version went to be with people?",
+      "cognitive_pattern": "MASK_EXHAUSTION",
+      "theme_tags": [
+        "people pleasing",
+        "exhaustion",
+        "performing",
+        "social mask",
+        "can't be myself",
+        "always on",
+        "tired of pretending"
+      ],
+      "rewire_target": "Reduce identity performance \u2014 move toward authentic self-presentation in safe relationships.",
+      "full_question_bank": [
+        "How wide is the gap between who you are in public and who you are alone?",
+        "Is there anyone with whom the gap fully closes \u2014 and what makes that possible?",
+        "What would you stop doing in social situations if you trusted people to stay anyway?",
+        "What part of yourself have you been keeping out of sight for so long it feels dangerous to show?"
+      ]
+    },
+    {
+      "id": "TRA_005",
+      "retrieval_text": "trauma self blame it was my fault shame abuse responsibility child self SELF BLAME SURVIVAL Self-blame in powerless situations is the mind trying to find some control \u2014 even a painful one. What would you need to feel about them if the blame weren't yours to carry?",
+      "reframe": "Self-blame in powerless situations is the mind trying to find some control \u2014 even a painful one.",
+      "question": "What would you need to feel about them if the blame weren't yours to carry?",
+      "cognitive_pattern": "SELF_BLAME_SURVIVAL",
+      "theme_tags": [
+        "trauma",
+        "self blame",
+        "it was my fault",
+        "shame",
+        "abuse",
+        "responsibility",
+        "child self"
+      ],
+      "rewire_target": "Redistribute responsibility accurately \u2014 release self-blame without collapsing into victimhood.",
+      "full_question_bank": [
+        "What did blaming yourself give you that external blame couldn't \u2014 in terms of feeling some control?",
+        "If a child came to you with this exact story and blamed themselves, what would you say?",
+        "What would it mean about your world if you weren't responsible for what happened?",
+        "What does carrying the responsibility protect you from having to feel about the person who actually held it?"
+      ]
+    },
+    {
+      "id": "PERF_004",
+      "retrieval_text": "perfectionism inner critic self judgment harsh self talk not good enough voice in head INNER CRITIC AUTHORITY The harshest voice inside you learned its tone before it had any choice about it. Whose voice does the inner critic sound like \u2014 and when did you take over running it yourself?",
+      "reframe": "The harshest voice inside you learned its tone before it had any choice about it.",
+      "question": "Whose voice does the inner critic sound like \u2014 and when did you take over running it yourself?",
+      "cognitive_pattern": "INNER_CRITIC_AUTHORITY",
+      "theme_tags": [
+        "perfectionism",
+        "inner critic",
+        "self judgment",
+        "harsh self talk",
+        "not good enough",
+        "voice in head"
+      ],
+      "rewire_target": "Develop inner critic awareness \u2014 understanding its origin and separating its voice from truth.",
+      "full_question_bank": [
+        "Whose voice does the inner critic most resemble?",
+        "What is the inner critic actually trying to protect you from?",
+        "If you spoke to someone you loved the way the inner critic speaks to you, what would that look like?",
+        "Has the inner critic's harshness ever actually produced the improvement it promises \u2014 or just the pain?"
+      ]
+    }
+  ]
+}

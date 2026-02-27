@@ -1,0 +1,209 @@
+{
+  "category": "Philosophical Sources — Taoism, Zen, Vedic Psychology",
+  "units": [
+
+    {
+      "id": "TAO_001",
+      "source": "Taoism — Tao Te Ching",
+      "cognitive_pattern": "FORCED_ACTION",
+      "theme_tags": ["forcing", "trying too hard", "effortless action", "wu wei", "control", "resistance", "flow"],
+      "core_reframe": "The harder you force something that isn't moving, the more you confirm to yourself that force is the only tool — when sometimes the right action is no action at all.",
+      "question_bank": [
+        "What would happen if you stopped pushing this for two weeks — not gave up, just stopped pushing?",
+        "Is the effort you're applying actually moving things, or just making you feel like you're doing something?",
+        "What would the path of least resistance look like — and why does it feel like cheating?",
+        "What are you afraid stillness would confirm about this situation?"
+      ],
+      "short_reframe": "Sometimes the most powerful move is to stop making moves.",
+      "short_question": "What would you see about this if you stopped pushing long enough to look?",
+      "rewire_target": "Develop strategic non-action — distinguishing effortless alignment from passive avoidance."
+    },
+
+    {
+      "id": "TAO_002",
+      "source": "Taoism — Tao Te Ching",
+      "cognitive_pattern": "POLARITY_BLINDNESS",
+      "theme_tags": ["opposites", "balance", "extremes", "all or nothing", "black and white", "yin yang"],
+      "core_reframe": "Every extreme contains the seed of its opposite — the person who is always strong is the one who most fears being weak; the one who always gives is often the one most afraid to receive.",
+      "question_bank": [
+        "What quality do you most pride yourself on — and what is its shadow side?",
+        "What are you refusing to be that might actually be part of a healthier balance?",
+        "Where in your life are you so far in one direction that you've lost access to the other?",
+        "What would the opposite of your current approach look like — and what does imagining it bring up?"
+      ],
+      "short_reframe": "The quality you most identify with is often the one most hiding its opposite.",
+      "short_question": "What are you refusing to be that might be exactly what this situation needs?",
+      "rewire_target": "Develop polarity integration — holding apparent opposites as complementary rather than mutually exclusive."
+    },
+
+    {
+      "id": "TAO_003",
+      "source": "Taoism — Chuang Tzu",
+      "cognitive_pattern": "USEFULNESS_OBSESSION",
+      "theme_tags": ["productivity", "usefulness", "rest", "doing nothing", "worth", "busyness", "value"],
+      "core_reframe": "A tree that produces no fruit is considered useless — until you notice it's the only one old enough to provide shade. Not everything that matters is measurable by output.",
+      "question_bank": [
+        "What do you do that has no measurable outcome but that your life would be worse without?",
+        "When you rest without productivity, what do you tell yourself about yourself?",
+        "What would you value in a person that you don't allow yourself to value in yourself?",
+        "What part of your worth is entirely separate from what you produce?"
+      ],
+      "short_reframe": "The parts of you that produce nothing might be the parts holding everything else together.",
+      "short_question": "What do you allow yourself to value in others that you won't allow in yourself?",
+      "rewire_target": "Expand the definition of value beyond productivity — recover intrinsic worth."
+    },
+
+    {
+      "id": "ZEN_001",
+      "source": "Zen Buddhism",
+      "cognitive_pattern": "BEGINNER_MIND_LOSS",
+      "theme_tags": ["assumptions", "expertise", "knowing too much", "rigid thinking", "fresh eyes", "openness"],
+      "core_reframe": "The expert's mind has fewer possibilities than the beginner's — not because it knows less, but because it has already decided what is possible.",
+      "question_bank": [
+        "What have you stopped questioning about this situation because you've been here before?",
+        "What would a complete stranger notice about this that you no longer see?",
+        "What question have you stopped asking because you assumed you already knew the answer?",
+        "What if what's familiar about this is exactly what's making it harder to navigate?"
+      ],
+      "short_reframe": "Familiarity is sometimes just another word for the blindspot you've stopped looking at.",
+      "short_question": "What are you too experienced with this situation to see clearly anymore?",
+      "rewire_target": "Restore beginner's mind — approach familiar situations with genuine fresh inquiry."
+    },
+
+    {
+      "id": "ZEN_002",
+      "source": "Zen Buddhism — Koans",
+      "cognitive_pattern": "RATIONAL_LOCK",
+      "theme_tags": ["overthinking", "logic", "analysis", "stuck in head", "can't decide", "too much thinking"],
+      "core_reframe": "Some knots tighten when you pull both ends harder. The mind that works harder on certain problems moves further from resolution, not closer.",
+      "question_bank": [
+        "What does your gut say — before your mind has a chance to argue with it?",
+        "What would you do if you had to decide in the next ten seconds with no time to think?",
+        "What do you already know that all the thinking is helping you avoid acknowledging?",
+        "What if the answer isn't something you'll find by thinking — but something you'll find by stopping?"
+      ],
+      "short_reframe": "The analysis that feels like progress might be the thing keeping the answer just out of reach.",
+      "short_question": "What do you already know that the thinking is helping you avoid?",
+      "rewire_target": "Develop non-analytical knowing — access somatic and intuitive intelligence alongside rational thought."
+    },
+
+    {
+      "id": "ZEN_003",
+      "source": "Zen Buddhism — Direct Experience",
+      "cognitive_pattern": "CONCEPT_OVER_EXPERIENCE",
+      "theme_tags": ["living in concepts", "not present", "theory vs experience", "abstract thinking", "missing the moment"],
+      "core_reframe": "The menu is not the meal. The map is not the territory. The concept of your life is not your life — and sometimes understanding something very well is a way of not having to feel it.",
+      "question_bank": [
+        "What are you understanding about this situation that you're not yet fully experiencing?",
+        "Is there a way you use analysis to keep yourself at a safe distance from what's actually happening?",
+        "What would it feel like to just be in this situation — without narrating or explaining it?",
+        "What would you have to feel if you stopped thinking about it so carefully?"
+      ],
+      "short_reframe": "Having a framework for the experience is sometimes a way of avoiding the experience itself.",
+      "short_question": "What would you feel if you stopped explaining this and just sat inside it?",
+      "rewire_target": "Bridge concept and experience — develop capacity for direct encounter rather than mediated understanding."
+    },
+
+    {
+      "id": "ZEN_004",
+      "source": "Zen Buddhism — Impermanence",
+      "cognitive_pattern": "THIS_MOMENT_ESCAPE",
+      "theme_tags": ["presence", "now", "escape", "distraction", "not wanting to be here", "avoidance of present"],
+      "core_reframe": "The desire to be anywhere but here is a signal worth examining — not a flaw to fix but a pointer toward what 'here' is currently containing.",
+      "question_bank": [
+        "What is 'here' holding that makes somewhere else feel preferable?",
+        "What would you have to face if you stopped looking for somewhere better to be?",
+        "Is the present moment actually unbearable — or does it just feel that way compared to an imagined elsewhere?",
+        "What part of right now, if you really looked at it, isn't actually as bad as the urgency to leave it suggests?"
+      ],
+      "short_reframe": "The urge to escape the present is always pointing at something the present contains.",
+      "short_question": "What is this moment holding that makes anywhere else feel better?",
+      "rewire_target": "Develop present-moment tolerance — sitting with what is rather than escaping to what could be."
+    },
+
+    {
+      "id": "VP_001",
+      "source": "Vedic Psychology — Pancha Kosha",
+      "cognitive_pattern": "SURFACE_LEVEL_DIAGNOSIS",
+      "theme_tags": ["layers of self", "body", "mind", "emotion", "deeper self", "root cause", "symptoms vs source"],
+      "core_reframe": "What presents as a mental problem is often a physical one. What presents as a physical one is often emotional. What feels emotional is often existential. The symptom and the source are rarely at the same layer.",
+      "question_bank": [
+        "Where do you feel this in your body — not what you think about it, where you feel it?",
+        "If this difficulty had a location in your body, where would it live?",
+        "What layer of yourself have you been ignoring while trying to fix the visible layer?",
+        "When you tend to the body — sleep, movement, breath — what changes about how the problem looks?"
+      ],
+      "short_reframe": "The layer you're working on and the layer where the problem lives aren't always the same.",
+      "short_question": "Where does this live in your body — not your analysis of it, the actual physical location?",
+      "rewire_target": "Develop multi-layer self-awareness — address problems at the level where they actually originate."
+    },
+
+    {
+      "id": "VP_002",
+      "source": "Vedic Psychology — Triguna in Behavior",
+      "cognitive_pattern": "STATE_AS_TRAIT",
+      "theme_tags": ["mood", "mental state", "i'm just like this", "personality", "fixed character", "emotional states"],
+      "core_reframe": "The qualities you call your personality are often the qualities of your most frequent mental state — not fixed traits, but habitual weather.",
+      "question_bank": [
+        "What mental state do you spend the most time in — and have you confused that with your character?",
+        "Who are you in your clearest, most rested, most aligned moments — and how different is that person?",
+        "What conditions produce the version of you that you most want to be?",
+        "Is the 'I'm just like this' description of yourself an observation or an acceptance of something that could change?"
+      ],
+      "short_reframe": "What you call your personality is often just your most frequent state wearing a permanent badge.",
+      "short_question": "Who are you in your clearest moments — and how far is that from who you think you are?",
+      "rewire_target": "Distinguish state from trait — recognize that habitual mental states can be changed, unlike fixed character."
+    },
+
+    {
+      "id": "VP_003",
+      "source": "Vedic Psychology — Vasanas (Deep Impressions)",
+      "cognitive_pattern": "UNCONSCIOUS_REPETITION",
+      "theme_tags": ["patterns", "why does this keep happening", "same situation", "karma", "deep impressions", "conditioning"],
+      "core_reframe": "The situations that keep finding you are rarely coincidences — they're the mind drawing what it already knows how to draw, from impressions laid so deep you call them fate.",
+      "question_bank": [
+        "This pattern — when did you first encounter it? Not this version, but this shape?",
+        "What belief about yourself or the world would have to be true for this to keep happening?",
+        "If this pattern were trying to resolve something — what unfinished thing would it be finishing?",
+        "What would break the loop — not outside, but in how you enter the same kind of situation?"
+      ],
+      "short_reframe": "What keeps happening to you is partly what you keep bringing into every room without knowing.",
+      "short_question": "What unfinished thing might this situation be trying to complete?",
+      "rewire_target": "Develop vasana awareness — recognizing deep impressions driving repetitive patterns."
+    },
+
+    {
+      "id": "VP_004",
+      "source": "Vedic Psychology — Dharana (Concentration) and Scattered Attention",
+      "cognitive_pattern": "ATTENTION_FRAGMENTATION",
+      "theme_tags": ["focus", "concentration", "distraction", "scattered", "can't focus", "attention span", "multitasking"],
+      "core_reframe": "A scattered mind isn't a broken one — it's one that has learned to stay shallow because going deep felt risky, or revealed things it didn't want to stay with.",
+      "question_bank": [
+        "What happens when you try to sit with one thing for an extended period — what does the mind run toward?",
+        "Is the distraction random, or does it pull you toward specific things? What things?",
+        "What are you avoiding by keeping your attention moving?",
+        "When were you last fully absorbed in something — what made that possible?"
+      ],
+      "short_reframe": "The distracted mind is often a mind that learned that staying with things was dangerous.",
+      "short_question": "What does your attention run toward when it runs away — and what does that tell you?",
+      "rewire_target": "Rebuild concentration as self-trust — attention as a capacity to be with oneself."
+    },
+
+    {
+      "id": "TAO_004",
+      "source": "Taoism — Water Principle",
+      "cognitive_pattern": "RIGIDITY_AS_STRENGTH",
+      "theme_tags": ["flexibility", "stubbornness", "rigidity", "adapting", "change", "being strong", "not bending"],
+      "core_reframe": "Water is the softest thing and carves through stone — not by being harder than stone, but by being consistent, yielding, and willing to find a new way around.",
+      "question_bank": [
+        "Where in this situation are you being rigid in a way you're calling strength?",
+        "What would become possible if you approached this with more flexibility and less force?",
+        "What are you protecting by holding your current position so firmly?",
+        "What is the version of this where you bend without breaking — and what does it look like?"
+      ],
+      "short_reframe": "The most rigid things break first — the softest things outlast everything.",
+      "short_question": "What are you protecting by refusing to bend here?",
+      "rewire_target": "Develop adaptive resilience — strength through flexibility rather than through rigidity."
+    }
+  ]
+}

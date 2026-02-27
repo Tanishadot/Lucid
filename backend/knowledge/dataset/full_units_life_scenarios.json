@@ -1,0 +1,277 @@
+{
+  "category": "Life Scenarios — Money, Family, Friendship, Addiction",
+  "units": [
+
+    {
+      "id": "MON_001",
+      "cognitive_pattern": "SCARCITY_IDENTITY",
+      "theme_tags": ["money", "poverty mindset", "scarcity", "fear of losing money", "never enough", "financial anxiety"],
+      "core_reframe": "The fear of not having enough money is rarely about money — it's about what money represents: safety, worth, or proof that you made it.",
+      "question_bank": [
+        "What does having money protect you from feeling about yourself?",
+        "When did financial security first feel like a measure of your worth?",
+        "What would 'enough' actually feel like — not look like, feel like?",
+        "What are you really trying to secure when you think about money?"
+      ],
+      "short_reframe": "The scarcity isn't in the account — it's in the story running underneath it.",
+      "short_question": "What does money mean to you beyond what it can buy?",
+      "rewire_target": "Separate financial reality from identity — money as a tool, not a verdict."
+    },
+
+    {
+      "id": "MON_002",
+      "cognitive_pattern": "MONEY_AS_SCOREBOARD",
+      "theme_tags": ["money", "comparison", "success", "earning", "salary", "keeping up", "status"],
+      "core_reframe": "Using money as a measure of success is measuring with someone else's ruler — the number only feels meaningful in comparison to another number.",
+      "question_bank": [
+        "Whose financial life are you unconsciously benchmarking against?",
+        "If no one knew how much you earned, would the amount still matter as much?",
+        "What would you do with money if it carried no social signal whatsoever?",
+        "What does earning more solve that earning less doesn't — specifically?"
+      ],
+      "short_reframe": "The number only has power because of the comparison it enables.",
+      "short_question": "Whose scoreboard are you actually playing on?",
+      "rewire_target": "Disentangle financial goals from social comparison — build intrinsic financial values."
+    },
+
+    {
+      "id": "MON_003",
+      "cognitive_pattern": "SPENDING_AS_FEELING",
+      "theme_tags": ["money", "spending", "shopping", "impulse", "retail therapy", "debt", "avoidance"],
+      "core_reframe": "Spending that doesn't reflect your values is almost always spending that is trying to create a feeling — not acquire a thing.",
+      "question_bank": [
+        "What were you feeling in the hour before the purchase?",
+        "What does the thing you bought represent — not what it does, what it represents?",
+        "What feeling were you trying to install, and how long did it last?",
+        "What would you have had to sit with if you hadn't bought it?"
+      ],
+      "short_reframe": "The purchase was solving an emotion, not a need.",
+      "short_question": "What were you actually trying to feel when you bought it?",
+      "rewire_target": "Build awareness of emotional spending — distinguish acquisition from emotional regulation."
+    },
+
+    {
+      "id": "MON_004",
+      "cognitive_pattern": "GENEROSITY_GUILT",
+      "theme_tags": ["money", "giving", "guilt", "family money", "lending", "financial boundaries", "saying no"],
+      "core_reframe": "The inability to say no to financial requests from family often has nothing to do with money — it has to do with what saying no means about who you are.",
+      "question_bank": [
+        "What do you believe happens to the relationship if you say no?",
+        "Is the giving coming from love, or from fear of what happens if you don't?",
+        "What would you need to believe about yourself to hold this boundary?",
+        "Whose voice do you hear when you feel guilty for keeping your own money?"
+      ],
+      "short_reframe": "The guilt isn't about money — it's about the cost of being seen as someone who says no.",
+      "short_question": "What are you buying with the yes that you can't afford?",
+      "rewire_target": "Separate generosity from self-erasure — give from fullness, not from fear."
+    },
+
+    {
+      "id": "FAM_001",
+      "cognitive_pattern": "FAMILY_ROLE_LOCK",
+      "theme_tags": ["family", "roles", "the responsible one", "the black sheep", "the fixer", "identity", "parents"],
+      "core_reframe": "The role you were assigned in your family — the responsible one, the peacemaker, the difficult one — was a survival strategy, not a personality.",
+      "question_bank": [
+        "What role were you cast in your family — and who cast you in it?",
+        "What happens in the family system when you step outside that role?",
+        "How much of who you are today was designed to function inside that family?",
+        "What parts of yourself didn't fit the role and got quietly set aside?"
+      ],
+      "short_reframe": "The role you play in your family was assigned before you could choose.",
+      "short_question": "Who were you before the family needed you to be something specific?",
+      "rewire_target": "Separate family-assigned identity from chosen self — recover suppressed dimensions."
+    },
+
+    {
+      "id": "FAM_002",
+      "cognitive_pattern": "PARENTAL_APPROVAL_LOOP",
+      "theme_tags": ["family", "parents", "approval", "validation", "never good enough", "disappointing parents", "pleasing"],
+      "core_reframe": "The adult who still lives for parental approval is still a child in one specific room of themselves — the one that never got told it was enough.",
+      "question_bank": [
+        "What would you do differently tomorrow if their approval was permanently unavailable?",
+        "What have you built, chosen, or avoided because of how they would see it?",
+        "At what age did you decide their approval was the measure of your worth?",
+        "What would it mean to finally stop waiting for the verdict?"
+      ],
+      "short_reframe": "The approval you're still seeking was never fully given — and waiting hasn't changed that.",
+      "short_question": "What would you do if their opinion simply stopped reaching you?",
+      "rewire_target": "Transition from external parental validation to internal self-authorization."
+    },
+
+    {
+      "id": "FAM_003",
+      "cognitive_pattern": "INHERITED_BELIEF_BLINDNESS",
+      "theme_tags": ["family", "beliefs", "inherited patterns", "what we were taught", "family values", "questioning upbringing"],
+      "core_reframe": "Most of your deepest beliefs about money, love, success, and self-worth were installed before you were old enough to question them.",
+      "question_bank": [
+        "What belief about yourself have you never actually examined — you just received it?",
+        "What did your family teach you about yourself without ever saying it directly?",
+        "Which of your values are genuinely yours, and which are borrowed?",
+        "What would you believe about yourself if you had grown up in a completely different family?"
+      ],
+      "short_reframe": "The beliefs running your life were written before you could read.",
+      "short_question": "Which belief about yourself did you choose, and which were you handed?",
+      "rewire_target": "Develop examined beliefs — distinguish inherited programming from chosen values."
+    },
+
+    {
+      "id": "FAM_004",
+      "cognitive_pattern": "CARETAKER_EXHAUSTION",
+      "theme_tags": ["family", "caretaking", "responsibility", "burden", "aging parents", "siblings", "burnout", "resentment"],
+      "core_reframe": "The one who always shows up for everyone else often never learned that showing up for themselves is also an option.",
+      "question_bank": [
+        "When did you decide that your needs come last in this family?",
+        "What are you afraid would happen to the family system if you stopped holding it together?",
+        "Is the caretaking coming from love — or from fear of what you'd feel if you stopped?",
+        "What do you need right now that you would never ask for?"
+      ],
+      "short_reframe": "The one who holds everyone else together rarely asks who is holding them.",
+      "short_question": "What do you need that you've never allowed yourself to ask for?",
+      "rewire_target": "Build reciprocal care — recognizing own needs as legitimate without guilt."
+    },
+
+    {
+      "id": "FAM_005",
+      "cognitive_pattern": "ESTRANGEMENT_AMBIGUITY",
+      "theme_tags": ["family", "estrangement", "cutting off", "distance", "toxic family", "guilt about leaving", "no contact"],
+      "core_reframe": "Choosing distance from family can be an act of self-preservation — and still carry guilt, grief, and doubt simultaneously. These aren't contradictions. They're the cost.",
+      "question_bank": [
+        "What are you grieving about this distance that you haven't fully acknowledged?",
+        "Is the guilt telling you that you did something wrong — or that you love someone you had to move away from?",
+        "What did you need from this relationship that it was never able to give?",
+        "What would you lose if you fully accepted that this was the right choice?"
+      ],
+      "short_reframe": "You can make the right choice and still grieve it completely.",
+      "short_question": "What are you mourning underneath the relief?",
+      "rewire_target": "Hold complexity of difficult family decisions — right and painful can coexist."
+    },
+
+    {
+      "id": "FRD_001",
+      "cognitive_pattern": "FRIENDSHIP_PERFORMANCE",
+      "theme_tags": ["friendship", "people pleasing", "being liked", "performing", "authenticity", "social mask", "exhaustion"],
+      "core_reframe": "Exhaustion after social interaction is often the cost of performing a version of yourself rather than inhabiting one.",
+      "question_bank": [
+        "Which version of yourself shows up in this friendship — and how close is it to the actual one?",
+        "What would you say or do differently if you weren't managing how they see you?",
+        "What part of yourself do you keep off the table with this person?",
+        "What are you afraid they'd think if they saw the unedited version?"
+      ],
+      "short_reframe": "The exhaustion after being with people is often the cost of the performance, not the company.",
+      "short_question": "What would you say if you weren't managing their impression of you?",
+      "rewire_target": "Move from performed friendship to inhabited presence — authenticity over approval."
+    },
+
+    {
+      "id": "FRD_002",
+      "cognitive_pattern": "ONE_SIDED_GIVING",
+      "theme_tags": ["friendship", "one sided", "always giving", "never reciprocated", "resentment", "being used", "boundaries"],
+      "core_reframe": "A friendship where one person always gives and the other always receives isn't a friendship — it's a dynamic both people agreed to, usually without speaking.",
+      "question_bank": [
+        "When did you decide that giving more than you receive is just how this relationship works?",
+        "What would change if you simply gave the same amount they give — no more?",
+        "What do you get from being the one who gives more?",
+        "Have you ever directly asked for what you need in this friendship?"
+      ],
+      "short_reframe": "The imbalance continued because both people let it — including you.",
+      "short_question": "What do you get from being the one who gives more?",
+      "rewire_target": "Develop reciprocity awareness — recognize patterns of over-giving and the needs they serve."
+    },
+
+    {
+      "id": "FRD_003",
+      "cognitive_pattern": "FRIENDSHIP_GRIEF",
+      "theme_tags": ["friendship", "drifting apart", "lost friends", "growing apart", "loneliness", "change"],
+      "core_reframe": "Friendships that drift aren't always failures — sometimes they're both people becoming who they actually are, and those people fit differently.",
+      "question_bank": [
+        "Is this friendship ending, or evolving into something your current self doesn't need in the same way?",
+        "What did this friendship give you that you're afraid you won't find elsewhere?",
+        "What version of yourself existed in this friendship that you may have outgrown?",
+        "What are you grieving — the person, or who you were when you were close?"
+      ],
+      "short_reframe": "Growing apart is sometimes two people growing — just in different directions.",
+      "short_question": "Are you grieving the person, or who you were when you were close?",
+      "rewire_target": "Normalize friendship evolution — distinguish ending from transformation."
+    },
+
+    {
+      "id": "FRD_004",
+      "cognitive_pattern": "SOCIAL_COMPARISON_POISON",
+      "theme_tags": ["friendship", "jealousy", "envy", "friend's success", "comparison", "feeling left behind"],
+      "core_reframe": "Jealousy of a friend's success is painful precisely because it lives at the intersection of love and longing — you want what they have and you want them to have it.",
+      "question_bank": [
+        "Is the feeling jealousy — or is it a signal about something you want that you haven't admitted?",
+        "What specifically do they have that you want — the thing itself, or what it represents?",
+        "What would it mean about your friendship if you were genuinely happy for them?",
+        "What does their success make you afraid about your own path?"
+      ],
+      "short_reframe": "Jealousy of someone you love is information about yourself wearing someone else's face.",
+      "short_question": "What is their success pointing to that you want but haven't named?",
+      "rewire_target": "Transform jealousy into self-knowledge — use envy as directional data."
+    },
+
+    {
+      "id": "ADD_001",
+      "cognitive_pattern": "ADDICTION_AS_SOLUTION",
+      "theme_tags": ["addiction", "alcohol", "substances", "habits", "escape", "numbing", "coping", "dependency"],
+      "core_reframe": "Every addiction began as a solution — something that worked, at least for a while, to make an unbearable feeling bearable.",
+      "question_bank": [
+        "What feeling does it reliably make go away — even temporarily?",
+        "When you imagine not having it available, what's the first feeling that arrives?",
+        "What was happening in your life when this became a pattern rather than an occasional choice?",
+        "What problem was it originally solving that you still haven't found another way to solve?"
+      ],
+      "short_reframe": "It became a habit because it worked — the question is what it was working on.",
+      "short_question": "What feeling does it make disappear that you haven't found another way to face?",
+      "rewire_target": "Humanize the addiction — understand the unmet need beneath the behavior."
+    },
+
+    {
+      "id": "ADD_002",
+      "cognitive_pattern": "RELAPSE_SHAME_SPIRAL",
+      "theme_tags": ["addiction", "relapse", "shame", "failure", "trying to quit", "self-punishment", "cycles"],
+      "core_reframe": "The shame after relapse often produces more of the behavior it condemns — because shame is exactly the feeling the behavior was managing in the first place.",
+      "question_bank": [
+        "What does relapsing mean to you about who you are — not what you did, but who you are?",
+        "Is the self-punishment helping — or is it the thing that makes the next episode more likely?",
+        "What would self-compassion look like here — not excusing it, but not destroying yourself over it?",
+        "What were the conditions in the days before — what was building up?"
+      ],
+      "short_reframe": "The shame after the relapse feeds the next one — it's the same fuel.",
+      "short_question": "What were you carrying in the days before that you hadn't put down?",
+      "rewire_target": "Break shame-relapse cycle — build self-compassionate accountability instead."
+    },
+
+    {
+      "id": "ADD_003",
+      "cognitive_pattern": "FUNCTIONAL_DENIAL",
+      "theme_tags": ["addiction", "denial", "functional", "high functioning", "still managing", "justifying", "it's not that bad"],
+      "core_reframe": "The ability to function despite something is not the same as the thing not being a problem — it just means your threshold for normal has shifted.",
+      "question_bank": [
+        "What would someone who loves you say about this if they were being completely honest?",
+        "What are you comparing yourself to in order to conclude it's not that bad?",
+        "What has it quietly cost you that you don't include in the calculation?",
+        "What would life look like if this pattern simply wasn't part of it?"
+      ],
+      "short_reframe": "Still functioning doesn't mean the cost isn't being paid — just that the bill hasn't arrived yet.",
+      "short_question": "What has it quietly cost you that you leave out of the calculation?",
+      "rewire_target": "Dissolve functional denial — honest accounting of actual costs beyond performance."
+    },
+
+    {
+      "id": "ADD_004",
+      "cognitive_pattern": "IDENTITY_ADDICTION_MERGE",
+      "theme_tags": ["addiction", "identity", "who am I without it", "quitting", "social drinking", "part of personality"],
+      "core_reframe": "When a behavior has been present long enough, it starts to feel like a personality — not something you do, but something you are. The fear of quitting becomes the fear of not knowing who's left.",
+      "question_bank": [
+        "Who were you before this became a consistent part of your life?",
+        "What would you do with the time, the money, the emotional space if it weren't there?",
+        "What parts of your social life or identity are built around it?",
+        "Who do you think you'd be without it — and is that person more frightening or more free?"
+      ],
+      "short_reframe": "The fear of stopping is often the fear of meeting whoever is underneath.",
+      "short_question": "Who are you afraid you'd find if this weren't there to fill the space?",
+      "rewire_target": "Separate behavior from identity — develop a self-concept not dependent on the pattern."
+    }
+  ]
+}
