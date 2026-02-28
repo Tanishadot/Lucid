@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn, float } from '../animations/animationVariants';
-import { useParallaxScroll } from '../hooks/useParallaxScroll';
+import { fadeIn } from '../animations/animationVariants';
 
 const AtmosphericEntry: React.FC = () => {
-  const { style: parallaxStyle } = useParallaxScroll({ speed: 0.2 });
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -35,39 +33,10 @@ const AtmosphericEntry: React.FC = () => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="min-h-screen lucid-gradient flex flex-col items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex flex-col items-center justify-center relative"
     >
-      {/* Parallax sky background elements */}
-      <div 
-        className="absolute inset-0"
-        style={parallaxStyle}
-      >
-        {/* Floating particles background */}
-        {[...Array(20)].map((_, i) => {
-          const left = Math.random() * 100;
-          const top = Math.random() * 100;
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-blue-400 rounded-full opacity-30"
-              style={{
-                left: `${left}%`,
-                top: `${top}%`,
-              }}
-              animate={float}
-              transition={{
-                duration: 10 + Math.random() * 10,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-          );
-        })}
-
-        {/* Additional atmospheric layers for depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-blue-900/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-800/10 via-transparent to-slate-900/10" />
-      </div>
+      {/* Subtle depth overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent dark:from-slate-900/5 dark:via-blue-950/5 dark:to-purple-950/5 light:from-white/5 light:via-blue-50/5 light:to-purple-50/5" />
 
       {/* Main content */}
       <motion.div

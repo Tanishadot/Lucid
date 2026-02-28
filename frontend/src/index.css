@@ -10,14 +10,14 @@
   
   body {
     @apply min-h-screen transition-colors duration-300;
-    /* Light theme (default) */
-    background-color: #F4F2F8;
+    /* Transparent to show global background */
+    background-color: transparent;
     color: #4B5563;
   }
   
   /* Dark theme */
   .dark body {
-    background-color: #0F172A;
+    background-color: transparent;
     color: #CBD5E1;
   }
 }
@@ -137,6 +137,14 @@
   
   .dark .lucid-surface {
     background-color: #1E293B;
+  }
+
+  /* App container - transparent to show global background */
+  .App {
+    background-color: transparent;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
   }
 
   /* Performance optimizations for parallax */

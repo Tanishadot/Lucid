@@ -2,109 +2,153 @@ import re
 
 def validate_response(response: str) -> str:
     """
-    Validate single reflective question constraints:
+    Validate two-sentence philosophical response constraints:
+    - Enforce exactly two sentences
     - Enforce exactly one question mark
-    - Ensure response ends with question mark
-    - Remove periods before question mark
-    - Avoid multiple interrogative clauses
-    - Strip introductory statements
-    - Ensure intellectual precision
+    - Ensure final character is '?'
+    - Remove forbidden phrases
+    - Maintain philosophical framing + question structure
     """
     
     # Clean whitespace
     response = response.strip()
     
-    # Count questions
+    # Count question marks
     question_count = response.count('?')
     
-    # If multiple questions, keep only the strongest (longest meaningful interrogative clause)
-    if question_count > 1:
-        # Split by question marks and find the most substantial question
-        questions = [q.strip() for q in response.split('?') if q.strip()]
-        # Find the longest question (likely most substantial)
-        strongest_question = max(questions, key=len) if questions else ""
-        response = strongest_question + '?'
+    # FORBIDDEN PHRASES
+    forbidden_phrases = [
+        "you should",
+        "it may help", 
+        "consider",
+        "try to",
+        "remember that",
+        "how does that make you feel",
+        "what do you think",
+        "why do you think",
+        "what criteria are you using"
+    ]
     
-    # Remove any periods before question mark
-    response = re.sub(r'\.+\?', '?', response)
+    # Check for forbidden phrases
+    lower_response = response.lower()
+    for phrase in forbidden_phrases:
+        if phrase in lower_response:
+            # Regenerate with fallback structure
+            return "The pattern reveals the structure behind the appearance. What belief beneath this feels unquestioned?"
     
-    # Strip any introductory statements before the question
-    # Look for patterns like "Statement. Question" or "Statement? Question?"
-    if '?' in response:
-        question_start = response.rfind('?')
-        if question_start > 0:
-            # Check if there's content before the last question
-            before_question = response[:question_start + 1]
-            after_question = response[question_start + 1:].strip()
-            
-            # If there's substantial content before, extract just the question part
-            if after_question and len(after_question) > 10:
-                # Find the actual question in the after part
-                question_match = re.search(r'[^.!?]*\?', after_question)
-                if question_match:
-                    response = question_match.group(0).strip()
+    # VALIDATION RULE 1: Exactly one question mark
+    if question_count != 1:
+        if question_count == 0:
+            # No question - add fallback question
+            sentences = re.split(r'[.!?]+', response)
+            statements = [s.strip() for s in sentences if s.strip()]
+            if statements:
+                return f"{statements[0]}. What belief beneath this feels unquestioned?"
             else:
-                # Look for question in the whole response
-                question_match = re.search(r'[^.!?]*\?', response)
-                if question_match:
-                    response = question_match.group(0).strip()
+                return "The pattern reveals the structure behind the appearance. What belief beneath this feels unquestioned?"
+        elif question_count > 1:
+            # Multiple questions - keep only first question
+            first_question_pos = response.find('?')
+            response = response[:first_question_pos + 1]
     
-    # Ensure response ends with exactly one question mark
+    # VALIDATION RULE 2: Exactly two sentences
+    sentences = re.split(r'[.!?]+', response)
+    sentences = [s.strip() for s in sentences if s.strip()]
+    
+    if len(sentences) > 2:
+        # Keep only first statement + first question
+        statement = sentences[0]
+        # Find the question sentence
+        question_sentence = None
+        for s in sentences[1:]:
+            if '?' in s or any(word in s.lower() for word in ['what', 'why', 'how', 'which', 'who', 'when', 'where']):
+                question_sentence = s
+                break
+        
+        if question_sentence:
+            response = f"{statement}. {question_sentence}"
+        else:
+            response = f"{statement}. What belief beneath this feels unquestioned?"
+    
+    elif len(sentences) == 1:
+        # Only one sentence - check if it's a question or statement
+        if '?' in sentences[0]:
+            # It's a question - add framing statement
+            response = f"The pattern reveals the structure behind the appearance. {sentences[0]}"
+        else:
+            # It's a statement - add question
+            response = f"{sentences[0]}. What belief beneath this feels unquestioned?"
+    
+    # VALIDATION RULE 3: Final character must be '?'
     if not response.endswith('?'):
         response = response.rstrip('!?') + '?'
     
-    # Remove multiple consecutive question marks
-    response = re.sub(r'\?+', '?', response)
+    # VALIDATION RULE 4: No additional interrogative clauses
+    # Ensure only the final sentence is interrogative
+    parts = response.split('. ')
+    if len(parts) > 2:
+        # Keep only first statement and final question
+        response = f"{parts[0]}. {parts[-1]}"
     
-    # STRICT FORBIDDEN PATTERNS - Reject entire response if found
-    forbidden_openings = [
-        "it sounds like", "it seems", "you seem to", 
-        "you are experiencing", "the situation", "it appears that",
-        "it looks like", "you are connecting", "it appears"
-    ]
+    # VALIDATION RULE 5: Remove multiple consecutive punctuation
+    response = re.sub(r'[!?]{2,}', '?', response)
+    response = re.sub(r'\.\?', '.', response)
     
-    forbidden_questions = [
-        "what feelings arise", "how did that make you feel", 
-        "why do you think", "what caused", "what led to", 
-        "what made you", "what contributed to", "what specific qualities",
-        "what experiences led you", "what criteria are you using",
-        "how does that make you feel", "what do you think about that"
-    ]
-    
-    lower_response = response.lower()
-    
-    # Check for forbidden openings
-    for opening in forbidden_openings:
-        if opening in lower_response:
-            return "What belief beneath this feels unquestionable to you?"
-    
-    # Check for forbidden questions
-    for question in forbidden_questions:
-        if question in lower_response:
-            return "What belief beneath this feels unquestionable to you?"
-    
-    # Check for multiple interrogative clauses joined by conjunctions
-    interrogative_words = ['what', 'why', 'how', 'when', 'where', 'who', 'which']
-    clause_count = sum(1 for word in interrogative_words if word in lower_response.split())
-    
-    if clause_count > 1:
-        # Keep only the first substantial interrogative clause
-        words = response.split()
-        clause_end = -1
-        for i, word in enumerate(words):
-            if word.lower() in interrogative_words and i > 0:
-                clause_end = i
-                break
-        
-        if clause_end > 0:
-            response = ' '.join(words[:clause_end + 5]) + '?'  # Keep a few more words for context
-            response = re.sub(r'\?+', '?', response)
-    
-    # Remove extra whitespace and ensure single line
+    # Normalize whitespace
     response = re.sub(r'\s+', ' ', response).strip()
     
-    # Final validation: ensure it's a single, meaningful question
-    if len(response) < 10 or '?' not in response:
-        return "What belief beneath this feels unquestionable to you?"
+    # Final validation: ensure exactly 2 sentences and 1 question
+    final_sentences = re.split(r'[.!?]+', response)
+    final_sentences = [s.strip() for s in final_sentences if s.strip()]
+    final_questions = response.count('?')
+    
+    if len(final_sentences) != 2 or final_questions != 1:
+        return "The pattern reveals the structure behind the appearance. What belief beneath this feels unquestioned?"
     
     return response
+
+
+def lightweight_semantic_check(response: str, core_reframe: str = "", question_bank: list = None) -> bool:
+    """
+    Lightweight semantic alignment check.
+    
+    Args:
+        response: Generated response
+        core_reframe: Retrieved core reframing
+        question_bank: Retrieved question patterns
+        
+    Returns:
+        True if semantically aligned, False otherwise
+    """
+    if not core_reframe and not question_bank:
+        return True  # No grounding to check against
+    
+    # Check if response shares keywords with core_reframe
+    if core_reframe:
+        core_keywords = set(core_reframe.lower().split())
+        response_keywords = set(response.lower().split())
+        keyword_overlap = len(core_keywords & response_keywords)
+        
+        # Require at least some keyword overlap
+        if keyword_overlap < 2:
+            return False
+    
+    # Check if question aligns with question_bank patterns
+    if question_bank:
+        question_part = response.split('?')[0] + '?' if '?' in response else response
+        question_lower = question_part.lower()
+        
+        # Look for semantic similarity with question bank
+        for bank_question in question_bank:
+            bank_lower = bank_question.lower()
+            bank_keywords = set(bank_lower.split())
+            response_keywords = set(question_lower.split())
+            
+            # Simple keyword overlap check
+            overlap = len(bank_keywords & response_keywords)
+            if overlap >= 2:  # At least 2 overlapping keywords
+                return True
+        
+        return False  # No semantic alignment found
+    
+    return True

@@ -120,9 +120,11 @@ const DemoMode: React.FC<DemoModeProps> = ({ onExit }) => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="min-h-screen lucid-gradient flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center px-4 relative"
     >
-      <div className="max-w-4xl w-full">
+      {/* Subtle depth overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent dark:from-slate-900/3 dark:via-blue-950/3 dark:to-purple-950/3 light:from-white/3 light:via-blue-50/3 light:to-purple-50/3" />
+      <div className="max-w-4xl w-full relative z-10">
         <AnimatePresence mode="wait">
           {renderContent()}
         </AnimatePresence>

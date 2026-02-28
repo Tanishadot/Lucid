@@ -2,12 +2,21 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from api.simple_routes import router, TranscriptionResponse
+from api.conversation_routes import router as conversation_router
+from config.database import async_engine
+from models.conversation import Base
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
     print("=== LUCID BACKEND STARTUP ===")
+    
+    # Create database tables
+    async with async_engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+        print("Database tables created successfully.")
+    
     print("Server started successfully.")
     print("Chroma will initialize lazily on first request.")
     print("=== STARTUP COMPLETE ===")
@@ -16,6 +25,7 @@ async def lifespan(app: FastAPI):
     
     # Shutdown
     print("=== LUCID BACKEND SHUTDOWN ===")
+    await async_engine.dispose()
 
 
 app = FastAPI(title="LUCID Backend", lifespan=lifespan)
@@ -30,6 +40,7 @@ app.add_middleware(
 )
 
 app.include_router(router)
+app.include_router(conversation_router)
 
 @app.post("/api/transcribe", response_model=TranscriptionResponse)
 async def transcribe_audio_main(file: UploadFile = File(...)):

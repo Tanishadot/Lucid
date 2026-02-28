@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, slideUp } from '../animations/animationVariants';
-import { useParallaxScroll } from '../hooks/useParallaxScroll';
 
 interface InteractiveReflectionProps {
   onPromptClick: (prompt: string) => void;
@@ -10,7 +9,6 @@ interface InteractiveReflectionProps {
 const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptClick }) => {
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
   const [response, setResponse] = useState<string>('');
-  const { style: parallaxStyle } = useParallaxScroll({ speed: 0.15 });
 
   const prompts = [
     "What feels unclear right now?",
@@ -31,15 +29,10 @@ const InteractiveReflection: React.FC<InteractiveReflectionProps> = ({ onPromptC
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 lucid-card relative"
+      className="py-20 px-4 relative"
     >
-      {/* Subtle parallax background layer */}
-      <div 
-        className="absolute inset-0 pointer-events-none"
-        style={parallaxStyle}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/5 via-transparent to-purple-800/5 rounded-lg" />
-      </div>
+      {/* Subtle depth overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent dark:from-slate-900/3 dark:via-blue-950/3 dark:to-purple-950/3 light:from-white/3 light:via-blue-50/3 light:to-purple-50/3" />
 
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2

@@ -21,6 +21,12 @@ pydantic-settings>=2.0.0
 fastapi>=0.104.0
 uvicorn>=0.24.0
 
+# Database
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+asyncpg>=0.29.0
+psycopg2-binary>=2.9.0
+
 # Additional utilities
 numpy>=1.24.0
 tiktoken>=0.5.0
