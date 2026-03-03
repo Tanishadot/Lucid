@@ -12,7 +12,7 @@ async def test_conversation_api():
     """Test all conversation API endpoints"""
     print("=== Testing Conversation API ===")
     
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(follow_redirects=True) as client:
         try:
             # Test 1: Get conversations (should be empty initially)
             print("\n1. Testing GET /api/conversations")

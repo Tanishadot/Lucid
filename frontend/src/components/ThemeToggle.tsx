@@ -8,7 +8,11 @@ const ThemeToggle: React.FC = () => {
   return (
     <motion.button
       onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+      className="p-2 rounded-full transition-all duration-300"
+      style={{
+        backgroundColor: theme === 'dark' ? 'rgba(124, 92, 255, 0.2)' : 'rgba(244, 241, 250, 0.8)',
+        border: `1px solid ${theme === 'dark' ? 'rgba(124, 92, 255, 0.3)' : 'rgba(124, 92, 255, 0.2)'}`,
+      }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       aria-label="Toggle theme"
@@ -21,7 +25,8 @@ const ThemeToggle: React.FC = () => {
         {theme === 'light' ? (
           // Moon icon for light mode
           <svg
-            className="w-5 h-5 text-gray-700"
+            className="w-5 h-5"
+            style={{ color: '#2A1F35' }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -36,7 +41,8 @@ const ThemeToggle: React.FC = () => {
         ) : (
           // Sun icon for dark mode
           <svg
-            className="w-5 h-5 text-yellow-400"
+            className="w-5 h-5"
+            style={{ color: '#F4F1FA' }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -45,7 +51,7 @@ const ThemeToggle: React.FC = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0L-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
             />
           </svg>
         )}

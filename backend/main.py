@@ -1,3 +1,4 @@
+# LUCID Backend Main Application
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
@@ -78,3 +79,16 @@ def root():
 @app.get("/health")
 def health_check():
     return {"status": "healthy", "chroma": "lazy-loading"}
+
+@app.get("/debug-conversation")
+async def debug_conversation():
+    """Debug conversation endpoint"""
+    try:
+        from config.database import AsyncSessionLocal
+        from sqlalchemy import text
+        async with AsyncSessionLocal() as session:
+            result = await session.execute(text("SELECT COUNT(*) FROM conversations"))
+            count = result.scalar()
+            return {"status": "ok", "conversation_count": count}
+    except Exception as e:
+        return {"status": "error", "error": str(e)}

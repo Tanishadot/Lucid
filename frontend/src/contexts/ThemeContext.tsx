@@ -21,22 +21,26 @@ interface ThemeProviderProps {
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    // Check localStorage for saved theme, default to light
+    // Check localStorage for saved theme, default to dark
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
-      return (savedTheme as 'light' | 'dark') || 'light';
+      if (savedTheme) {
+        return (savedTheme as 'light' | 'dark');
+      }
+      // Respect prefers-color-scheme only on first visit
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-    return 'light';
+    return 'dark';
   });
 
   useEffect(() => {
-    // Apply theme class to html element
+    // Apply theme attribute to html element
     const root = document.documentElement;
     
     if (theme === 'dark') {
-      root.classList.add('dark');
+      root.setAttribute('data-theme', 'dark');
     } else {
-      root.classList.remove('dark');
+      root.setAttribute('data-theme', 'light');
     }
     
     // Save to localStorage
@@ -58,3 +62,5 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
+export default ThemeProvider;

@@ -3,7 +3,6 @@ import LandingPage from './pages/LandingPage'
 import ChatPage from './pages/ChatPage'
 import DemoPage from './pages/DemoPage'
 import { ThemeProvider } from './contexts/ThemeContext'
-import BackgroundLayer from './components/BackgroundLayer'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'landing' | 'chat' | 'demo'>('landing')
@@ -14,7 +13,6 @@ function App() {
 
   return (
     <ThemeProvider>
-      <BackgroundLayer />
       <div className="App">
         {currentPage === 'landing' && (
           <LandingPage 

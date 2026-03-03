@@ -1,3 +1,4 @@
+# Conversation service for LUCID backend
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy import and_, desc
@@ -23,6 +24,16 @@ class ConversationResponse(BaseModel):
     class Config:
         from_attributes = True
 
+    @classmethod
+    def from_orm(cls, obj):
+        return cls(
+            id=str(obj.id),
+            user_id=str(obj.user_id),
+            title=obj.title,
+            created_at=obj.created_at,
+            updated_at=obj.updated_at
+        )
+
 class MessageCreate(BaseModel):
     conversation_id: str
     role: MessageRole
@@ -37,6 +48,16 @@ class MessageResponse(BaseModel):
     
     class Config:
         from_attributes = True
+
+    @classmethod
+    def from_orm(cls, obj):
+        return cls(
+            id=str(obj.id),
+            conversation_id=str(obj.conversation_id),
+            role=obj.role.value,
+            content=obj.content,
+            timestamp=obj.timestamp
+        )
 
 class ConversationWithMessages(BaseModel):
     id: str

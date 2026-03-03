@@ -7,15 +7,34 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost/lucid_db")
-ASYNC_DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./lucid.db")
 
-# Async engine for FastAPI
-async_engine = create_async_engine(
-    ASYNC_DATABASE_URL,
-    echo=os.getenv("DEBUG", "false").lower() == "true",
-    future=True
-)
+# Handle different database types
+if DATABASE_URL.startswith("sqlite"):
+    # SQLite configuration
+    ASYNC_DATABASE_URL = DATABASE_URL.replace("sqlite://", "sqlite+aiosqlite://")
+    async_engine = create_async_engine(
+        ASYNC_DATABASE_URL,
+        echo=os.getenv("DEBUG", "false").lower() == "true",
+        future=True
+    )
+    # Sync engine for SQLite
+    sync_engine = create_engine(
+        DATABASE_URL,
+        echo=os.getenv("DEBUG", "false").lower() == "true"
+    )
+else:
+    # PostgreSQL configuration
+    ASYNC_DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
+    async_engine = create_async_engine(
+        ASYNC_DATABASE_URL,
+        echo=os.getenv("DEBUG", "false").lower() == "true",
+        future=True
+    )
+    sync_engine = create_engine(
+        DATABASE_URL,
+        echo=os.getenv("DEBUG", "false").lower() == "true"
+    )
 
 AsyncSessionLocal = async_sessionmaker(
     async_engine,
@@ -23,12 +42,7 @@ AsyncSessionLocal = async_sessionmaker(
     expire_on_commit=False
 )
 
-# Sync engine for migrations
-sync_engine = create_engine(
-    DATABASE_URL,
-    echo=os.getenv("DEBUG", "false").lower() == "true"
-)
-
+# Sync session for migrations
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,

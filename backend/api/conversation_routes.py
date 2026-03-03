@@ -1,7 +1,8 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Body
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List
 import uuid
+from pydantic import BaseModel
 
 from config.database import get_db
 from services.conversation_service import (
@@ -15,6 +16,10 @@ from services.conversation_service import (
 from models.conversation import MessageRole
 
 router = APIRouter(prefix="/api/conversations", tags=["conversations"])
+
+# Pydantic model for starting a new conversation
+class StartConversationRequest(BaseModel):
+    first_message: str
 
 # Mock user authentication - in production, get from JWT token
 def get_current_user_id() -> str:
@@ -107,7 +112,7 @@ async def delete_conversation(
 
 @router.post("/start", response_model=ConversationWithMessages)
 async def start_new_conversation(
-    first_message: str,
+    request: StartConversationRequest,
     db: AsyncSession = Depends(get_db),
     user_id: str = Depends(get_current_user_id)
 ):
@@ -115,7 +120,7 @@ async def start_new_conversation(
     service = ConversationService(db)
     
     # Generate title from first message
-    title = await service.generate_title_from_first_message(first_message)
+    title = await service.generate_title_from_first_message(request.first_message)
     
     # Create conversation
     conversation_data = ConversationCreate(user_id=user_id, title=title)
@@ -125,7 +130,7 @@ async def start_new_conversation(
     message_data = MessageCreate(
         conversation_id=str(conversation.id),
         role=MessageRole.USER,
-        content=first_message
+        content=request.first_message
     )
     message = await service.create_message(message_data)
     

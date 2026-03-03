@@ -3,11 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import AtmosphericEntry from '../components/AtmosphericEntry';
 import InteractiveReflection from '../components/InteractiveReflection';
 import DualEntryButtons from '../components/DualEntryButtons';
-import Mascot from '../components/Mascot';
-import ParallaxBackground from '../components/ParallaxBackground';
 import Disclaimer from '../components/Disclaimer';
 import ThemeToggle from '../components/ThemeToggle';
 import ReflectionTimeline from '../components/ReflectionTimeline';
+import ParticleField from '../components/ParticleField';
+import AmbientLight from '../components/AmbientLight';
+import CursorGlow from '../components/CursorGlow';
+import NeuralFooter from '../components/NeuralFooter';
 
 interface LandingPageProps {
   onStartChat: () => void;
@@ -61,29 +63,33 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartChat, onStartDemo }) =
   };
 
   return (
-    <div className="min-h-screen relative flex">
-      {/* Main content */}
-      <div className={`flex-1 transition-all duration-500 ${showTimeline ? 'mr-80' : 'mr-0'}`}>
-        <div className="min-h-screen relative">
-          {/* Global parallax sky background */}
-          <ParallaxBackground speed={0.1}>
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-blue-900/20" />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-blue-800/10" />
-          </ParallaxBackground>
+    <div className="min-h-screen relative bg-[var(--bg-primary)]">
+      {/* Global Effects */}
+      <CursorGlow />
+      <AmbientLight />
+      <ParticleField />
 
-          {/* Theme toggle button */}
-          <div className="fixed top-8 right-8 z-50">
-            <ThemeToggle />
-          </div>
-
-          <AtmosphericEntry />
-          <InteractiveReflection onPromptClick={handlePromptClick} />
-          <DualEntryButtons onStartChat={onStartChat} onStartDemo={onStartDemo} />
-          <Disclaimer />
-          <div className="fixed bottom-8 right-8">
-            <Mascot />
-          </div>
+      {/* Main Content */}
+      <div className={`transition-all duration-500 ${showTimeline ? 'mr-80' : 'mr-0'}`}>
+        {/* Theme toggle button */}
+        <div className="fixed top-8 right-8 z-50">
+          <ThemeToggle />
         </div>
+
+        {/* Hero Section */}
+        <AtmosphericEntry onStartChat={onStartChat} onStartDemo={onStartDemo} />
+        
+        {/* Features & Reflection Section */}
+        <InteractiveReflection onPromptClick={handlePromptClick} />
+        
+        {/* Entry Points */}
+        <DualEntryButtons onStartChat={onStartChat} onStartDemo={onStartDemo} />
+        
+        {/* Disclaimer */}
+        <Disclaimer />
+        
+        {/* Footer */}
+        <NeuralFooter />
       </div>
 
       {/* Reflection Timeline Panel */}
@@ -94,16 +100,16 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartChat, onStartDemo }) =
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 320 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="fixed right-0 top-0 h-full w-80 lucid-surface border-l border-gray-200 dark:border-gray-600 z-30 overflow-hidden"
+            className="fixed right-0 top-0 h-full w-80 glass-strong border-l border-white/10 z-40 overflow-hidden"
           >
             <div className="h-full flex flex-col">
               {/* Header */}
-              <div className="p-4 border-b border-gray-200 dark:border-gray-600">
+              <div className="p-4 border-b border-white/10">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-lg font-semibold lucid-primary-text">Reflection Journey</h2>
+                  <h2 className="text-lg font-semibold text-[var(--text-primary)]">Reflection Journey</h2>
                   <button
                     onClick={() => setShowTimeline(false)}
-                    className="lucid-muted-text hover:lucid-primary-text transition-colors p-1 rounded"
+                    className="text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors p-1 rounded"
                   >
                     ×
                   </button>
@@ -128,8 +134,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartChat, onStartDemo }) =
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
         onClick={() => setShowTimeline(!showTimeline)}
-        className={`fixed left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-full lucid-button-secondary shadow-lg ${
-          showTimeline ? 'bg-blue-500 text-white' : ''
+        className={`fixed left-4 top-1/2 transform -translate-y-1/2 z-30 p-3 rounded-full glass shadow-lg transition-all ${
+          showTimeline ? 'bg-violet-500/30 text-white border-violet-500/50' : 'hover:border-violet-500/30'
         }`}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
